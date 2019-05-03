@@ -1,0 +1,103 @@
+.container--lead {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lead {
+  &__cont {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-mess {
+      margin-top: 63px;
+      display: flex;
+      flex-direction: column;
+
+      &-tittle {
+        line-height: 1;
+        text-transform: uppercase;
+        font-family: 'Alegr-bold';
+        font-size: 60px;
+        color: #fff;
+      }
+
+      &-desc {
+        width: 73%;
+        font-family: 'Alegr';
+        font-size: 21px;
+        color: #fff;
+        margin-top: 5px;
+      }
+
+      &-btn {
+        margin-top: 23px;
+        padding: 0;
+      }
+
+      &-btn-link {
+        padding: 20px 35px;
+        background-color: #fff;
+        border-radius: 30px;
+        font-family: 'Alegr-extrabold';
+        font-size: 19px;
+        text-transform: uppercase;
+        color: #0f5a47;
+        box-shadow: 0px 2px 7px rgba(80, 80, 80, .5);
+      }
+    }
+  }
+
+  &__adv {
+    margin-top: 42px;
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    .lead__adv-item {
+      display: flex;
+      justify-content: flex-start;
+
+      .lead__icon {
+        width: 50px;
+        height: 42px;
+        background-image: url(../../img/icon/natural.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      .speed {
+        background-image: url(../../img/icon/speed.png);
+      }
+
+      .fig {
+        background-image: url(../../img/icon/figure.png);
+      }
+    }
+
+    .lead__adv-desc {
+      margin-left: 5px;
+      font-family: 'Alegr';
+      font-size: 16px;
+      color: #fff;
+      line-height: normal;
+    }
+
+  }
+
+  &__image {
+    width: 50%;
+    position: relative;
+
+    .lead__img {
+      position: absolute;
+      top: -8%;
+      left: 5%;
+    }
+  }
+}

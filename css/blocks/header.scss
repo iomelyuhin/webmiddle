@@ -1,0 +1,67 @@
+.header__leaves {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+ z-index: 1;
+ bottom: -52%;
+ left: 12%;
+}
+.header__berries {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+ z-index: 1;
+ bottom: -60%;
+ left: 56%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &__logo {
+    margin: 25px 0;
+    font-family: 'Museo';
+    font-size: 24px;
+    line-height: 0.88;
+    color: #ffffff;
+  }
+
+  &__nav {
+    width: 76%;
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 45px;
+
+      .header__nav-link {
+        display: flex;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &__tel {
+    display: flex;
+    align-items: center;
+
+
+    &:before {
+      content: '';
+      display: flex;
+      padding-right: 6px;
+      height: 12px;
+      width: 12px;
+      background: url(../../img/icon/phone.png) center center no-repeat;
+    }
+
+    &-link {
+      font-size: 24px;
+      font-style: normal;
+      color: #fff;
+    }
+  }
+}
+
