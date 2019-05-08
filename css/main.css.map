@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AACQ,qCAA6B,CAC7B,iCAAyB,CACzB,gCAAwB,CAExB,kCAA0B,CAC1B,gCAAwB,CACxB,+BAAuB,CACvB,gCAAwB",
+"mappings": "AACQ,qCAA6B,CAC7B,iCAAyB,CACzB,gCAAwB,CAExB,kCAA0B,CAC1B,gCAAwB,CACxB,+BAAuB,CACvB,gCAAwB,CACxB,gCAAwB",
 "sources": ["main.scss"],
 "names": [],
 "file": "main.css"
