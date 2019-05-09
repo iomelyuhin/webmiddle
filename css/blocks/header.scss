@@ -11,28 +11,30 @@
   background-image: url('../../img/bg/leaves.png');
   width: 100%;
   min-height: 100%;
- z-index: 1;
- bottom: -52%;
- left: 12%;
- background-repeat: no-repeat;
+  z-index: 2;
+  bottom: -52%;
+  left: 12%;
+  background-repeat: no-repeat;
 }
+
 .header__berries {
   background-repeat: no-repeat;
   position: absolute;
   background-image: url('../../img/bg/berries.png');
   width: 100%;
   min-height: 100%;
- z-index: 1;
- bottom: -60%;
- left: 56%;
+  z-index: 1;
+  bottom: -60%;
+  left: 56%;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  &__logo, .logo__link{
+
+  &__logo,
+  .logo__link {
     margin: 25px 0;
     font-family: 'Museo';
     font-size: 24px;
@@ -76,4 +78,3 @@
     }
   }
 }
-
