@@ -1,3 +1,11 @@
+.section--header {
+  position: relative;
+  background-color: #61c4d9;
+  background-image: url('../../img/bg/pattern.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
 .header__leaves {
   position: absolute;
   background-image: url('../../img/bg/leaves.png');
@@ -24,7 +32,7 @@
   justify-content: space-between;
   align-items: center;
   
-  &__logo {
+  &__logo, .logo__link{
     margin: 25px 0;
     font-family: 'Museo';
     font-size: 24px;

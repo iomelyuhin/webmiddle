@@ -5,17 +5,16 @@
 }
 
 .lead {
-  height: 85%;
+  height: 100%;
+  display: flex;
 
   &__cont {
-    width: 50%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 
     &-mess {
       display: flex;
+      margin: auto 0;
       flex-direction: column;
       justify-content: center;  
 
@@ -55,7 +54,6 @@
   }
 
   &__adv {
-    margin-top: 42px;
     z-index: 2;
 
     &-list {
@@ -96,19 +94,13 @@
   }
 
   &__image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+    height: 90%;
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
 
-    .lead__img {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
+    
   }
 }

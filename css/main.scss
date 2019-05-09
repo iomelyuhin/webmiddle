@@ -1,10 +1,18 @@
+//colors
+$blue: #61c4d9;
+$dark_green: #0f5a47;
+$dark: #323232;
+$grey: #666;
+$black_t: #0d0d0d;
+
+
 //layout
-@import url('./layout/normalize.css');
-@import url('./layout/fonts.css');
-@import url('./layout/base.css');
-//blocks
-@import url('./blocks/header.css');
-@import url('./blocks/lead.css');
-@import url('./blocks/why.css');
-@import url('./blocks/crew.css');
-@import url('./blocks/feed.css');
+@import './layout/normalize.scss';
+@import './layout/fonts.scss';
+@import './layout/base.scss';
+//blocksport 
+@import './blocks/header.scss';
+@import './blocks/lead.scss';
+@import './blocks/why.scss';
+@import './blocks/crew.scss';
+@import './blocks/feed.scss';
