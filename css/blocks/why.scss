@@ -1,7 +1,7 @@
 .why {
   position: relative;
   height: 100%;
-  background-image: url('../../img/bg/pattern-leave.png');
+  background-image: url('../img/bg/pattern-leave.png');
   background-repeat: no-repeat;
   background-position: center left;
   &__bg-img {
@@ -60,13 +60,13 @@
           background-repeat: no-repeat;
         }
         .useful {
-          background-image: url('../../img/icon/useful.png');
+          background-image: url('../img/icon/useful.png');
         }
         .tasty {
-          background-image: url('../../img/icon/tasty.png');
+          background-image: url('../img/icon/tasty.png');
         }
         .powerful {
-          background-image: url('../../img/icon/power.png');
+          background-image: url('../img/icon/power.png');
         }
         .why__item-tittle {
           margin-top: 35px;
