@@ -1,89 +1,94 @@
 .why {
   position: relative;
-  height: 100%;
   background-image: url('../img/bg/pattern-leave.png');
   background-repeat: no-repeat;
   background-position: center left;
+
   &::before {
     content: "";
     width: 161px;
     height: 315px;
     position: absolute;
     bottom: -20%;
-    background: url('../img/bg/raspberries.png') center center / cover  no-repeat;
+    background: url('../img/bg/raspberries.png') center center / cover no-repeat;
   }
 
 }
 
-.container--why {
+.why__headline {
   display: flex;
   flex-direction: column;
-  
-  .why__headline {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    .why__tittle {
-      text-align: center;
-    }
-    .why__desc {
-      margin-top: 23px;
-      display: flex;
-      width: 43%;
-      text-align: center;
-      align-self: center;
-      font-family: 'Alegr';
-      font-size: 18px;
-      color: #666;
-    }
+
+  .why__tittle {
+    text-align: center;
   }
-  .why__content {
-    margin-top: 57px;
-    .why__list {
+
+  .why__desc {
+    margin-top: 23px;
+    display: flex;
+    width: 43%;
+    text-align: center;
+    align-self: center;
+    font-family: 'Alegr';
+    font-size: 18px;
+    color: #666;
+  }
+}
+
+.why__content {
+  margin-top: 57px;
+
+  .why__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .why__item {
+      position: relative;
+      width: 29.5%;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-      .why__item {
-        position: relative;
-        width: 29.5%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .why__separator {
-          position: absolute;
-          left: 97%;
-          bottom: 74%;
-          width: 67px;
-          height: 21px;
-        }
-        .why__icon {
-          width: 125px;
-          height: 125px;
-          border-radius: 50%;
-          background-color: #f2f5f4;
-          background-position: center center;
-          background-repeat: no-repeat;
-        }
-        .useful {
-          background-image: url('../img/icon/useful.png');
-        }
-        .tasty {
-          background-image: url('../img/icon/tasty.png');
-        }
-        .powerful {
-          background-image: url('../img/icon/power.png');
-        }
-        .why__item-tittle {
-          margin-top: 35px;
-          font-family: 'Alegr-bold';
-          font-size: 27px;
-          color: #000;
-        }
-        .why__item-desc {
-          text-align: center;
-        }
+
+      .why__separator {
+        position: absolute;
+        left: 97%;
+        bottom: 74%;
+        width: 67px;
+        height: 21px;
+      }
+
+      .why__icon {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        background-color: #f2f5f4;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+
+      .useful {
+        background-image: url('../img/icon/useful.png');
+      }
+
+      .tasty {
+        background-image: url('../img/icon/tasty.png');
+      }
+
+      .powerful {
+        background-image: url('../img/icon/power.png');
+      }
+
+      .why__item-tittle {
+        margin-top: 35px;
+        font-family: 'Alegr-bold';
+        font-size: 27px;
+        color: #000;
+      }
+
+      .why__item-desc {
+        text-align: center;
       }
     }
   }
 }
-

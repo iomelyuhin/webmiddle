@@ -102,8 +102,9 @@
   color: #666;
 }
 .dis-crew-desc {
-  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
 .act-crew-desc {
-  opacity: 1;
+  height: 100%;
 }
