@@ -51,13 +51,32 @@
   font-size: 21px;
   color: #323232;
   position: relative;
+  
+}
+
+.dis-crew-trang {
+  position: relative;
   &::after {
     content: "";
-    border: 8px solid transparent;
+    border: 7px solid transparent;
     border-top-color: $dark-green;
     border-bottom-width: 0;
-    border-left-width: 6px;
-    border-right-width: 6px;
+    border-left-width: 4.5px;
+    border-right-width: 4.5px;
+    position: absolute;
+    top: 41%;
+    right: 9%;
+  }
+}
+.act-crew-trang {
+  position: relative;
+  &::after {
+    content: "";
+    border: 7px solid transparent;
+    border-bottom-color: $dark-green;
+    border-top-width: 0;
+    border-left-width: 4.5px;
+    border-right-width: 4.5px;
     position: absolute;
     top: 41%;
     right: 9%;
@@ -73,6 +92,9 @@
   font-size: 18px;
   color: #666;
 }
-.disabled {
+.dis-crew-desc {
   opacity: 0;
+}
+.act-crew-desc {
+  opacity: 1;
 }
