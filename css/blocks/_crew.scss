@@ -11,6 +11,15 @@
     top: -25%;
     background: url('../img/bg/pattern-crew.png') top right / cover no-repeat;
   }
+  &::after {
+    content: "";
+    width: 104px;
+    height: 114px;
+    position: absolute;
+    left: 0;
+    bottom: -5%;
+    background: url('../img/bg/crew-raspb.png') center center / cover no-repeat;
+  }
 }
 
 .crew__bg {
