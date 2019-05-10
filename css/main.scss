@@ -4,14 +4,13 @@ $dark_green: #0f5a47;
 $dark: #323232;
 $grey: #666;
 $black_t: #0d0d0d;
-
 //layout
-@import './layout/normalize.scss';
-@import './layout/fonts.scss';
-@import './layout/base.scss';
+@import './layout/_normalize.scss';
+@import './layout/_fonts.scss';
+@import './layout/_base.scss';
 //blocksport 
-@import './blocks/header.scss';
-@import './blocks/lead.scss';
-@import './blocks/why.scss';
-@import './blocks/crew.scss';
-@import './blocks/feed.scss';
+@import './blocks/_header.scss';
+@import './blocks/_lead.scss';
+@import './blocks/_why.scss';
+@import './blocks/_crew.scss';
+@import './blocks/_feed.scss';
