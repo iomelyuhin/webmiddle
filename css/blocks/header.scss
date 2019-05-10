@@ -10,12 +10,11 @@
 
 .header--container::before {
   content: "";
-  background: url('../img/bg/bg-header-leaves.png') no-repeat;
+  background: url('../img/bg/bg-header-leaves.png') bottom center / cover no-repeat;
   width: 1056px;
   height: 353px;
   position: absolute;
   bottom: -8%;
-  left: 5%;
   z-index: 3;
 }
 
