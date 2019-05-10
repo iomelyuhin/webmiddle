@@ -4,6 +4,19 @@
   background-image: url('../img/bg/pattern.png');
   background-repeat: no-repeat;
   background-position: right bottom;
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+.header--container::before {
+  content: "";
+  background: url('../img/bg/bg-header-leaves.png') no-repeat;
+  width: 1056px;
+  height: 353px;
+  position: absolute;
+  bottom: -8%;
+  left: 5%;
+  z-index: 3;
 }
 
 .header__leaves {
@@ -39,7 +52,7 @@
     font-family: 'Museo';
     font-size: 24px;
     line-height: 0.88;
-    color: #ffffff;
+    color: inherit;
   }
 
   &__nav {
@@ -52,7 +65,7 @@
 
       .header__nav-link {
         display: flex;
-        color: #ffffff;
+        color: inherit;
       }
     }
   }
@@ -74,7 +87,7 @@
     &-link {
       font-size: 24px;
       font-style: normal;
-      color: #fff;
+      color: inherit;
     }
   }
 }

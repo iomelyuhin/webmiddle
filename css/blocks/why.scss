@@ -4,10 +4,15 @@
   background-image: url('../img/bg/pattern-leave.png');
   background-repeat: no-repeat;
   background-position: center left;
-  &__bg-img {
+  &::before {
+    content: "";
+    width: 161px;
+    height: 315px;
     position: absolute;
     bottom: -20%;
+    background: url('../img/bg/raspberries.png') center center / cover  no-repeat;
   }
+
 }
 
 .container--why {

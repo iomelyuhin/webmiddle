@@ -1,55 +1,77 @@
-.section--crew {
-  height: 100%;
-}
+
 .crew {
   position: relative;
   display: flex;
-
-  .crew__bg {
+  &::before {
+    content: "";
+    width: 196px;
+    height: 578px;
     position: absolute;
-    top: -10%;
     right: 0;
-    z-index: 1;
+    top: -25%;
+    background: url('../img/bg/pattern-crew.png') top right / cover no-repeat;
   }
-  .container--crew {
-    margin-top: 109px;
-    z-index: 2;
-    text-align: center;
-    
-    .crew__cont {
-      margin-top: 68px;
-      .crew__list {
-        display: flex;
-        justify-content: space-between;
-        .crew__item {
-          &:nth-child(1) {
-            padding-top: 6px;
-          }
-          &:nth-child(2) {
-            padding-top: 63px;
-          }
-          &:nth-child(4) {
-            padding-top: 50px;
-          }
-          .crew__item-tittle {
-            font-family: 'Alegr-bold';
-            font-size: 21px;
-            color: #323232;
-          }
-          .crew__position {
-            font-family: 'Alegr-medium';
-            font-size: 18px;
-            color: #281e1e;
-          }
-          .crew__text {
-            font-family: 'Alegr-light';
-            font-size: 18px;
-            color: #666;
-          }
-        }
-      }
-    }
+}
+
+.crew__bg {
+  position: absolute;
+  top: -10%;
+  right: 0;
+  z-index: 1;
+}
+
+.container--crew {
+  z-index: 2;
+  text-align: center;
+}
+
+.crew__cont {
+  margin-top: 68px;
+}
+
+.crew__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.crew__item {
+  &:nth-child(1) {
+    padding-top: 6px;
   }
+  &:nth-child(2) {
+    padding-top: 63px;
+  }
+  &:nth-child(4) {
+    padding-top: 50px;
+  }
+  
+}
+.crew__item-tittle {
+  font-family: 'Alegr-bold';
+  font-size: 21px;
+  color: #323232;
+  position: relative;
+  &::after {
+    content: "";
+    border: 8px solid transparent;
+    border-top-color: $dark-green;
+    border-bottom-width: 0;
+    border-left-width: 6px;
+    border-right-width: 6px;
+    position: absolute;
+    top: 41%;
+    right: 9%;
+  }
+}
+.crew__position {
+  font-family: 'Alegr-medium';
+  font-size: 18px;
+  color: #281e1e;
+}
+.crew__text {
+  font-family: 'Alegr-light';
+  font-size: 18px;
+  color: #666;
 }
 .disabled {
   opacity: 0;
