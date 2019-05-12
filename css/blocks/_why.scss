@@ -24,63 +24,73 @@
   }
 
   .why__desc {
-    margin-top: 23px;
+    margin-top: rem(23px);
     display: flex;
     width: 43%;
     text-align: center;
     align-self: center;
     font-family: 'Alegr';
-    font-size: 18px;
+    font-size: rem(18px);
     color: #666;
   }
 }
 
 .why__content {
-  margin-top: 57px;
+  margin-top: rem(57px);
+}
 
-  .why__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.why__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .why__item {
-      position: relative;
-      width: 29.5%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+.why__item {
+  position: relative;
+  width: 29.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-      .why__separator {
-        position: absolute;
-        left: 97%;
-        bottom: 74%;
-        width: 67px;
-        height: 21px;
-      }
+.why__icon {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: #f2f5f4;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  position: relative;
 
-      .why__icon {
-        width: 125px;
-        height: 125px;
-        border-radius: 50%;
-        background-color: #f2f5f4;
-        background-position: center center;
-        background-repeat: no-repeat;
-        display: flex;
-      }
-
-
-      .why__item-tittle {
-        margin-top: 35px;
-        font-family: 'Alegr-bold';
-        font-size: 27px;
-        color: #000;
-      }
-
-      .why__item-desc {
-        text-align: center;
-      }
-    }
+  &:after {
+    content: "";
+    position: absolute;
+    background-image: url('../img/bg/separator.png');
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 21px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -136%;
   }
+}
+
+.why__item:last-child {
+  .why__icon:after {
+    display: none;
+  }
+}
+
+.why__item-tittle {
+  margin-top: rem(35px);
+  font-family: 'Alegr-bold';
+  font-size: rem(27px);
+  color: #000;
+}
+
+.why__item-desc {
+  text-align: center;
 }
 
 .why__icon-svg {
@@ -100,6 +110,7 @@
   width: 66px;
   height: 69px;
 }
+
 .smile {
   width: 70px;
   height: 69px;

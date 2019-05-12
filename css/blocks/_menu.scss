@@ -8,9 +8,9 @@
 }
 
 .menu__tittle {
-  margin: 100px 80px;
+  margin: rem(100px) rem(80px);
   font-family: 'Alegr-bold';
-  font-size: 48px;
+  font-size: rem(48px);
   text-transform: uppercase;
 }
 
@@ -25,6 +25,7 @@
   display: flex;
 }
 .menu__link {
+  display: block;
   color: inherit;
   padding: 0;
   margin: 0;
@@ -32,6 +33,7 @@
 
 .menu__item-name {
   background: url('../img/bg/bg-menu-item1.jpg') center center / cover no-repeat;
+  height: 100%;
 }
 .menu--honey {
   background: url('../img/bg/bg-menu-item2.jpg') center center / cover no-repeat;
@@ -48,7 +50,8 @@
   height: 100%;
   font-family: 'Alegr-medium';
   font-size: 48px;
-  padding: 46px 26px;
+  padding: rem(46px) rem(26px);
+  line-height: 1;
 }
 
 .menu__item-text {
@@ -58,8 +61,8 @@
 }
 
 .menu--enabled {
-  width: 630px;
-  padding: 57px 27px;
+  width: rem(630px);
+  padding: rem(57px) rem(27px);
 }
 
 .menu--disabled {

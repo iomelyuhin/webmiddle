@@ -35,7 +35,7 @@
 }
 
 .crew__cont {
-  margin-top: 68px;
+  margin-top: rem(68px);
 }
 
 .crew__list {
@@ -44,20 +44,14 @@
 }
 
 .crew__item {
-  &:nth-child(1) {
-    padding-top: 6px;
-  }
-  &:nth-child(2) {
-    padding-top: 63px;
-  }
-  &:nth-child(4) {
-    padding-top: 50px;
+  &:nth-child(2n) {
+    padding-top: rem(63px);
   }
   
 }
 .crew__item-tittle {
   font-family: 'Alegr-bold';
-  font-size: 21px;
+  font-size: rem(21px);
   color: #323232;
   position: relative;
   
@@ -93,12 +87,12 @@
 }
 .crew__position {
   font-family: 'Alegr-medium';
-  font-size: 18px;
+  font-size: rem(18px);
   color: #281e1e;
 }
 .crew__text {
   font-family: 'Alegr-light';
-  font-size: 18px;
+  font-size: rem(18px);
   color: #666;
 }
 .dis-crew-desc {
