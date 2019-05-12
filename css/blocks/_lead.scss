@@ -13,6 +13,8 @@
   margin: auto 0;
   flex-direction: column;
   justify-content: center;
+  z-index: 3;
+
 }
 
 .lead__cont-mess-tittle {
@@ -29,10 +31,6 @@
   margin-top: rem(5px);
 }
 
-.lead__cont-btn {
-  z-index: 2;
-}
-
 .lead__cont-mess-btn-link {
   background: #fff;
   display: inline-flex;
@@ -44,7 +42,6 @@
   text-transform: uppercase;
   color: #0f5a47;
   box-shadow: 0px 2px 7px rgba(80, 80, 80, .5);
-  z-index: 2;
 }
 
 .lead__adv {
