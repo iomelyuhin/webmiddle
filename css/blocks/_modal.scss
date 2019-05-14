@@ -1,0 +1,26 @@
+.modal {
+  background-color: #2f3234;
+  opacity: 0.99;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  &--inactive {
+    display: none;
+  }
+}
+
+
+.modal__message {
+  position: fixed;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: rem(38px) rem(60px);
+
+}
