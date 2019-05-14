@@ -99,6 +99,7 @@
 .radio__input {
   appearance: none;
   -webkit-appearance: none;
+  -moz-appearance:none;
 }
 
 .radio__fake {
@@ -139,6 +140,7 @@
   height: 26px;
   appearance: none;
   -webkit-appearance: none;
+  -moz-appearance:none;
 }
 
 .check__fake {
