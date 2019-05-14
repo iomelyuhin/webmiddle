@@ -6,6 +6,7 @@ $grey: #666;
 $black_t: #0d0d0d;
 $sky: #b0f7ff;
 $dark_ico: #2a2a29;
+$grey-light: #f8faf9;
 //rem function
 @function rem ($px) {
   @return $px / 18px + 0rem;
@@ -16,6 +17,7 @@ $dark_ico: #2a2a29;
 @import './layout/_base.scss';
 //blocksport 
 @import './blocks/_header.scss';
+@import './blocks/_btn.scss';
 @import './blocks/_lead.scss';
 @import './blocks/_why.scss';
 @import './blocks/_crew.scss';

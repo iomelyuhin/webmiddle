@@ -1,3 +1,107 @@
 .prod {
+  background-color: $grey-light;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 135px;
+    height: 112px;
+    position: absolute;
+    background: url(../img/bg/prod-berry.png) center center no-repeat;
+    bottom: -6%;
+    right: 2%;
+  }
+}
+
+.prod__list {
+  position: relative;
+}
+
+.prod__next {
+  position: absolute;
+  transform: rotate(180deg);
+  right: 10%;
+}
+
+.prod__prev {
+  position: absolute;
+  left: 10%;
+}
+
+.prod__item {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prod--active {
+  display: flex;
+}
+
+.prod--inactive {
+  display: none;
+}
+
+.prod__cont {
+  margin-left: rem(78px);
+}
+
+.prod__tittle {
+  font-family: "Alegr-bold";
+  color: $black_t;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.prod__comp {
+  margin-top: rem(41px);
+  padding: 0;
+  font-family: "Alegr-medium";
+  font-size: 24px;
+}
+
+.prod__text {
+  margin-top: rem(33px);
+  padding: 0;
+  color: #666;
+  width: 85%;
+
+  & p {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.prod__spec-list {
+  display: flex;
+  justify-content: flex-start;
+  color: #333;
+}
+
+.prod__spec-item {
+  width: 50%;
+  margin-top: rem(50px);
+}
+
+.prod__spec-text {
+  font-family: 'Alegr-bold';
+}
+
+.prod__lead {
+  display: flex;
+  align-items: center;
+  margin-top: rem(35px);
+}
+
+.prod__price {
+  width: 50%;
+  font-family: "Alegr-light";
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.prod__btn {
+  margin: 0;
 }

@@ -43,8 +43,8 @@
                 батончики</h1>
               <div class="lead__cont-mess-desc">Наши батончики идеально подходят для
                 тех, кто следит за своим здоровьем</div>
-              <div class="lead__cont-btn">
-                <a href="#" class="lead__cont-mess-btn-link">Заказать</a>
+              <div class="lead__cont-btn btn">
+                <a href="#" class="lead__cont-mess-btn-link btn__link">Заказать</a>
               </div>
             </div>
             <div class="lead__adv">
@@ -321,18 +321,18 @@
     <section class="section prod">
       <div class="container">
         <ul class="prod__list">
-          <li class="prod__item">
+          <li class="prod__item prod--active">
             <div class="prod__image">
               <img src="img/pic/product1.png" alt="Батончики" class="prod__pic">
             </div>
             <div class="prod__cont">
-              <h2 class="prod__tittle">Батончик “Морские  водоросли”</h2>
+              <h2 class="prod__tittle">Батончик "Морские водоросли"</h2>
               <h3 class="prod__comp">Состав:</h3>
               <div class="prod__text">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iusto tempora magnam saepe 
-                  porro minima nesciunt similique atque maxime neque vel nulla quis harum rerum est ratione voluptas 
-                  </p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iusto tempora magnam saepe
+                  porro minima nesciunt similique atque maxime neque vel nulla quis harum rerum est ratione voluptas
+                </p>
               </div>
               <div class="prod__spec">
                 <ul class="prod__spec-list">
@@ -347,16 +347,173 @@
                 </ul>
               </div>
               <div class="prod__lead">
-                <div class="prod__price">140 р</div>
-                <a href="" class="prod__btn">Заказать</a>
+                <div class="prod__price">140 ₽</div>
+                <a href="#" class="prod__btn btn__link color--dark">Заказать</a>
               </div>
             </div>
-
-
+          </li>
+          <li class="prod__item prod--inactive">
+            <div class="prod__image">
+              <img src="img/pic/product2.png" alt="Батончики" class="prod__pic">
+            </div>
+            <div class="prod__cont">
+              <h2 class="prod__tittle">Батончик “Гранола  виноград”</h2>
+              <h3 class="prod__comp">Состав:</h3>
+              <div class="prod__text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iusto tempora magnam saepe
+                  porro minima nesciunt similique atque maxime neque vel nulla quis harum rerum est ratione voluptas
+                </p>
+              </div>
+              <div class="prod__spec">
+                <ul class="prod__spec-list">
+                  <li class="prod__spec-item">
+                    <h3 class="prod__spec-tittle">Калорийность</h3>
+                    <div class="prod__spec-text">110 ккал</div>
+                  </li>
+                  <li class="prod__spec-item">
+                    <h3 class="prod__spec-tittle">Вес</h3>
+                    <div class="prod__spec-text">95 грамм</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="prod__lead">
+                <div class="prod__price">140 ₽</div>
+                <a href="#" class="prod__btn btn__link color--dark">Заказать</a>
+              </div>
+            </div>
           </li>
         </ul>
+        <a href="#" class="prod__prev">
+          <img src="img/pic/select.png" alt="previous" class="prod__left">
+        </a>
+        <a href="#" class="prod__next">
+          <img src="img/pic/select.png" alt="next" class="prod__right">
+        </a>
       </div>
     </section>
+
+    <section class="section how">
+      <h2 class="how__tittle tittle">Как мы работаем</h2>
+      <div class="how__video">
+        <img src="img/pic/how-video" alt="video" class="how__video-img">
+      </div>
+    </section>
+
+    <section class="section deliv">
+      <div class="container">
+        <h2 class="deliv__tittle">Закажите доставку</h2>
+        <form action="" class="deliv__form form">
+          <div class="form__half">
+            <div class="form__row">
+              <label class="form__label">
+                <h3 class="form__input-name">Имя</h3>
+                <input type="text" class="form__input" placeholder="Ди Каприо">
+              </label>
+              <label class="form__label">
+                <h3 class="form__input-name">Телефон</h3>
+                <input type="text" class="form__input" placeholder="+79639630022">
+              </label>
+            </div>
+            <div class="form__row">
+              <label class="form__label">
+                <h3 class="form__input-name">Улица</h3>
+                <input type="text" class="form__input" placeholder="Волл-Стрит">
+              </label>
+            </div>
+            <div class="form__row">
+              <label class="form__label">
+                <h3 class="form__input-name">Дом</h3>
+                <input type="text" class="form__input" placeholder="6">
+              </label>
+              <label class="form__label">
+                <h3 class="form__input-name">Корпус</h3>
+                <input type="text" class="form__input" placeholder="2">
+              </label>
+              <label class="form__label">
+                <h3 class="form__input-name">Квартира</h3>
+                <input type="text" class="form__input" placeholder="55">
+              </label>
+              <label class="form__label">
+                <h3 class="form__input-name">Этаж</h3>
+                <input type="text" class="form__input" placeholder="3">
+              </label>
+            </div>
+          </div>
+          <div class="form__half">
+            <div class="form__row">
+              <label class="form__label">
+                <h3 class="form__input-name">Комментарий</h3>
+                <textarea type="text" class="form__textarea" placeholder="Ваше сообщение"></textarea>
+              </label>
+            </div>
+            <div class="form__row radio__row">
+              <label class="radio__label">
+                <input type="radio" class="radio__input">
+                <div class="radio__fake"></div>
+                <div class="radio__var form__input-name">
+                  Потребуется сдача
+                </div>
+              </label>
+              <label class="radio__label">
+                <input type="radio" class="radio__input">
+                <div class="radio__fake"></div>
+                <div class="radio__var form__input-name">
+                  Оплата по карте
+                </div>
+              </label>
+            </div>
+            <div class="form__row check__row">
+              <label class="form__label">
+                <input type="checkbox" class="form__input check__input">
+                <div class="checkbox__fake"></div>
+                <div class="form__input-name">Не перезванивать</div>
+              </label>
+            </div>
+            <div class="form__row">
+              <a href="#" class="btn__link color--dark">Заказать</a>
+              <a href="#" class="form__clear">Очистить</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <div class="section map">
+
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <address class="footer__half">
+          <div class="footer__address">Москва, ул.Новый Арбат, д.31/12</div>
+          <a href="tel:+78009039090" class="footer__tel">8 800 903 90 90</a>
+        </address>
+        <div class="footer__half">
+          <ul class="footer__social social">
+            <li class="social__item">
+              <svg class="social__icon vk">
+                <use xlink:href="./img/sprite.svg#vk"></use>
+              </svg>
+            </li>
+            <li class="social__item">
+              <svg class="social__icon fb">
+                <use xlink:href="./img/sprite.svg#fb"></use>
+              </svg>
+            </li>
+            <li class="social__item">
+              <svg class="social__icon ig">
+                <use xlink:href="./img/sprite.svg#ig"></use>
+              </svg>
+            </li>
+            <li class="social__item">
+              <svg class="social__icon tw">
+                <use xlink:href="./img/sprite.svg#tw"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </div>
 
 
