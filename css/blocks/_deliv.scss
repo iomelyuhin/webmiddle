@@ -21,6 +21,25 @@
 
 .deliv__form-cont {
   display: flex;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 135px;
+    height: 188px;
+    background: url('../img/bg/bg-form-leave.png') center center no-repeat;
+    bottom: 10%;
+    right: -6%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 63px;
+    height: 58px;
+    background: url('../img/bg/bg-form-berry.png') center center no-repeat;
+    bottom: 2%;
+    left: -7%;
+  }
 }
 
 .form__half {
@@ -42,7 +61,12 @@
   padding: rem(22px) rem(11px);
   width: 100%;
   border: none;
-
+  border: 3px solid transparent;
+  outline: none;
+  font-family: 'Open Sans';
+  &:focus {
+    border-color: #dde3bd;
+  }
 }
 
 .form__input-name {
@@ -57,6 +81,12 @@
   padding: rem(22px) rem(11px);
   border: none;
   height: rem(180px);
+  border: 3px solid transparent;
+  outline: none;
+  font-family: 'Open Sans';
+  &:focus {
+    border-color: #dde3bd;
+  }
 }
 
 .radio__label {

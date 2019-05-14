@@ -22,10 +22,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: rem(25px) 0;
 }
 
 .logo__link {
-  margin: rem(25px) 0;
   font-family: 'Museo';
   font-size: rem(24px);
   line-height: 0.88;
@@ -47,7 +47,7 @@
   color: inherit;
 }
 
-.header__tel {
+.header__tel, .tel{
   display: flex;
   align-items: center;
 
@@ -61,7 +61,7 @@
   }
 }
 
-.header__tel-link {
+.header__tel-link, .tel__link {
   font-size: rem(24px);
   font-style: normal;
   color: inherit;
