@@ -1,0 +1,47 @@
+.how {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 154px;
+    height: 220px;
+    background: url('../img/bg/bg-how-berries.png') center center no-repeat;
+    left: 0;
+    top: -12%;
+  }
+}
+
+.how__tittle {
+  text-align: center;
+}
+
+.how__video {
+  position: relative;
+  margin-top: rem(70px);
+  width: rem(660px);
+  height: rem(405px);
+  background: url('../img/pic/video.jpg') center center no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 72px;
+    height: 175px;
+    background: url('../img/bg/bg-video-left.png') center center no-repeat;
+    left: -30%;
+    bottom: -18%;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 77px;
+    background: url('../img/bg/bg-video-right.png') center center no-repeat;
+    right: -20%;
+    top: -15%;
+  }
+}
