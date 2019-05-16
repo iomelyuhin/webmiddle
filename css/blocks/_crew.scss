@@ -25,12 +25,6 @@
 
 }
 
-.crew__bg {
-  position: absolute;
-  top: -10%;
-  right: 0;
-  z-index: 1;
-}
 
 .container--crew {
   z-index: 2;
@@ -39,14 +33,18 @@
 
 .crew__cont {
   margin-top: rem(68px);
+  width: 100%;
 }
 
 .crew__list {
   display: flex;
-  justify-content: space-between;
+  margin-left: rem(-20px);
+  flex-wrap: wrap;
 }
 
 .crew__item {
+  width: calc(100% / 4 - 20px);
+  margin-left: rem(20px);
   &:nth-child(2n) {
     padding-top: rem(63px);
   }
