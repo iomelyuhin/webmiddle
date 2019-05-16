@@ -17,17 +17,20 @@
 .prod__list {
   position: relative;
 }
-
-.prod__next {
+.arrow {
+  width: 29px;
+  height: 15px;
+  fill: $black_t;
   position: absolute;
-  transform: rotate(180deg);
-  right: 10%;
-  top: 46%;
+  top: 50%;
 }
-
-.prod__prev {
-  position: absolute;
+.side-left {
   left: 10%;
+  transform: rotate(90deg) translateY(-50%);
+}
+.side-right {
+  right: 10%;
+  transform: rotate(-90deg) translateY(-50%);
 }
 
 .prod__item {
@@ -44,7 +47,12 @@
   display: none;
 }
 
+.prod__image {
+  width: 50%;
+}
+
 .prod__cont {
+  width: 50%;
   margin-left: rem(78px);
 }
 

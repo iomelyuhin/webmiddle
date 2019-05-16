@@ -18,8 +18,11 @@
     position: absolute;
     left: 0;
     bottom: -5%;
+    z-index: 2;
     background: url('../img/bg/crew-raspb.png') center center / cover no-repeat;
   }
+
+
 }
 
 .crew__bg {

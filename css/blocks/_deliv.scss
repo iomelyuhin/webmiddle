@@ -20,6 +20,7 @@
 }
 
 .deliv__form-cont {
+  margin-top: rem(55px);
   display: flex;
   position: relative;
   &::after {
@@ -44,6 +45,11 @@
 
 .form__half {
   width: 50%;
+  .textarea__row {
+    .form__label {
+      margin-right: 0;
+    }
+  }
 }
 
 .form__row {
@@ -81,7 +87,7 @@
   width: 100%;
   padding: rem(22px) rem(11px);
   border: none;
-  height: rem(180px);
+  height: rem(198px);
   border: 3px solid transparent;
   outline: none;
   font-family: 'Open Sans';
@@ -139,7 +145,7 @@
   padding: 0;
   height: 26px;
   appearance: none;
-  -webkit-appearance: none;
+  //-webkit-appearance: none;
   -moz-appearance:none;
 }
 
@@ -163,9 +169,10 @@
   transform: translate(-50%, -50%);
 }
 
-.textarea__row, .radio__row, .check__row {
+.textarea__row.form__label, .radio__row.form__label, .check__row.form__label {
   margin-right: 0;
 }
+
 
 .btn__row {
   display: flex;

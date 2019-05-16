@@ -66,3 +66,36 @@
   font-style: normal;
   color: inherit;
 }
+
+.header__hamburger-link {
+  display: flex;
+  align-items: center;
+  height: 22px;
+  width: 24px;
+}
+
+.header__hamburger {
+  width: 24px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #fff;
+    top: -8px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #fff;
+    bottom: -8px;
+  }
+}
