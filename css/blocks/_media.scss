@@ -90,4 +90,32 @@
   .why__icon::after {
     display: none;
   }
+
+  .container--prod {
+    margin: rem(70px) 0;
+  }
+
+  .prod__item {
+    flex-direction: column;
+  }
+  .prod__image {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+  .prod__pic {
+    width: 100%;
+    height: 100%;
+  }
+  .arrow {
+    top: 25%;
+  }
+  .prod__cont {
+    margin-left: 0;
+    width: 65%;
+    text-align: center;
+  }
+  .prod__text {
+    width: 100%;
+  }
 }
