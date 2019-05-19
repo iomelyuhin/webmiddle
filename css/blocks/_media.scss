@@ -59,34 +59,44 @@
     text-align: center;
     margin-top: rem(120px);
   }
+
   .lead__cont-mess-desc {
     width: 50%;
   }
+
   .lead__adv {
     margin-top: rem(50px);
   }
+
   .why {
     padding: rem(75px) 0;
+
     &::before {
       bottom: -10%;
     }
   }
+
   .why__headline .why__desc {
     width: 55%;
   }
+
   .why__content {
     margin-top: rem(40px);
   }
+
   .why__list {
     flex-direction: column;
   }
+
   .why__item {
     width: 45%;
     margin-top: rem(47px);
+
     &:first-child {
       margin-top: 0;
     }
   }
+
   .why__icon::after {
     display: none;
   }
@@ -102,33 +112,41 @@
   .prod__item {
     flex-direction: column;
   }
+
   .prod__image {
     width: 60%;
     display: flex;
     justify-content: center;
   }
+
   .prod__pic {
     width: 100%;
     height: 100%;
   }
+
   .arrow {
     top: 25%;
   }
+
   .prod__cont {
     margin-left: 0;
     width: 65%;
     text-align: center;
   }
+
   .prod__text {
     width: 100%;
   }
+
   .container--crew {
     width: auto;
     max-width: 1100px;
   }
+
   .crew__item {
-  width: calc(100% / 2 - 20px);
-  margin-bottom: rem(36px);
+    width: calc(100% / 2 - 20px);
+    margin-bottom: rem(36px);
+
     &:nth-child(2n) {
       padding-top: 0;
     }
@@ -149,5 +167,81 @@
 
   .menu__list {
     width: 100%;
+  }
+
+  .feed__tittle {
+    margin-top: rem(75px);
+  }
+
+  .feed__content {
+    flex-direction: column;
+    text-align: center;
+    width: 75%;
+    margin: rem(65px) auto 0 auto;
+  }
+
+  .feed__fb-text {
+    width: 100%;
+  }
+
+  .how {
+    margin-top: rem(76px);
+  }
+
+  .deliv__tittle {
+    margin-top: rem(60px);
+  }
+
+  .deliv__form-cont {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form__half {
+    width: 75%;
+  }
+  .radio__row {
+    justify-content: center;
+  }
+  .check__row {
+    display: flex;
+    justify-content: center;
+  }
+  .check__label {
+    justify-content: center;
+  }
+
+  .btn__row {
+    justify-content: center;
+    margin-bottom: rem(66px);
+  }
+  .form__label:last-child {
+    margin-right: 0;
+  }
+  .nav--active {
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    top: 0%;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav--inactive {
+    display: none;
+  }
+  .header__nav-list {
+    z-index: 4;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #2f3234;
+    opacity: 0.99;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    font-size: rem(36px);
+    line-height: 72px;
   }
 }

@@ -50,7 +50,7 @@ a {
 
 .wrapper {
   overflow: hidden;
-  width: auto;
+  width: 100%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: auto;
+  width: 93%;
 }
 
 .section {
@@ -77,20 +77,20 @@ a {
 
 .tittle {
   font-family: 'Alegr-bold';
-  font-size: 48px;
+  font-size: rem(48px);
   text-transform: uppercase;
   color: #0d0d0d;
 }
 
 .text {
   font-family: 'Alegr-light';
-  font-size: 18px;
+  font-size: rem(18px);
   color: #666;
 }
 
 .paragr {
   font-family: 'Alegr';
-  font-size: 18px;
+  font-size: rem(18px);
   color: #666;
 }
 
