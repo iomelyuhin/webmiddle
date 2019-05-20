@@ -4,22 +4,22 @@
   display: flex;
   &::before {
     content: "";
-    width: 196px;
-    height: 578px;
+    width: rem(196px);
+    height: rem(578px);
     position: absolute;
     right: 0;
-    top: -25%;
-    background: url('../img/bg/pattern-crew.png') top right / cover no-repeat;
+    top: -20%;
+    background: url('../img/bg/pattern-crew.png') top right / contain no-repeat;
   }
   &::after {
     content: "";
-    width: 104px;
-    height: 114px;
+    width: rem(104px);
+    height: rem(114px);
     position: absolute;
     left: 0;
     bottom: -5%;
     z-index: 2;
-    background: url('../img/bg/crew-raspb.png') center center / cover no-repeat;
+    background: url('../img/bg/crew-raspb.png') center center / contain no-repeat;
   }
 
 

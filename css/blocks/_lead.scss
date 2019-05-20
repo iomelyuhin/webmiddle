@@ -55,17 +55,20 @@
   font-family: 'Alegr';
   font-size: rem(16px);
   line-height: normal;
+  width: rem(100px);
 }
 
 .lead__image {
-  max-height: 90%;
   position: relative;
   z-index: 2;
-  display: flex;
-  flex-direction: column;
   right: -6%;
-  justify-content: center;
-  max-width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.lead__img {
+  max-width: 100%;
+  object-fit: contain;
 }
 
 //icons
@@ -75,18 +78,18 @@
   stroke-width: 0.8;
   stroke-miterlimit: 10;
 }
+
 .leaves-icon {
-  width: 50px;
-  height: 42px;
+  width: rem(50px);
+  height: rem(42px);
 }
 
-
 .car-icon {
-  width: 50px;
-  height: 42px;
+  width: rem(50px);
+  height: rem(42px);
 }
 
 .linage-icon {
-  width: 50px;
-  height: 42px;
+  width: rem(50px);
+  height: rem(42px);
 }

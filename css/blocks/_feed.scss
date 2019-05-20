@@ -3,6 +3,7 @@
     url(../img/bg/leave_fb.png);
   background-repeat: no-repeat no-repeat;
   background-position: top right, bottom left;
+  background-size: rem(173px) rem(99px), rem(134px) rem(422px);
   display: flex;
   flex-direction: column;
   margin: auto 0;
@@ -61,8 +62,8 @@
 
 .feed__ava-item {
   border: 8px solid transparent;
-  width: 94px;
-  height: 94px;
+  width: rem(94px);
+  height: rem(94px);
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;

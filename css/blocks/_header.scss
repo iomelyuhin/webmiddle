@@ -5,14 +5,13 @@
   background-repeat: no-repeat;
   background-position: right bottom;
   color: #fff;
-  padding-bottom: rem(30px);
 }
 
 .header--container::before {
   content: "";
   background: url('../img/bg/bg-header-leaves.png') bottom center / contain no-repeat;
-  width: 1056px;
-  height: 353px;
+  width: rem(1056px);
+  height: rem(353px);
   position: absolute;
   bottom: -8%;
   z-index: 3;
@@ -22,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: rem(25px) 0;
+  padding: rem(25px) 0 0 0;
 }
 
 .logo__link {
@@ -68,7 +67,7 @@
 }
 
 .header__hamburger-link {
-  display: flex;
+  display: none;
   align-items: center;
   height: 22px;
   width: 24px;

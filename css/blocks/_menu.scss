@@ -26,12 +26,18 @@
 }
 .menu__item {
   display: flex;
+  &.active {
+    .menu__item-text {
+      width: 100%;
+      padding: rem(57px) rem(27px);
+    }
+  }
 }
 .menu__link {
   display: block;
   color: inherit;
   padding: 0;
-  max-width: 100px;
+  max-width: rem(100px);
   margin: 0;
   vertical-align: middle;
 }
@@ -54,23 +60,17 @@
   transform: rotate(180deg);
   height: 100%;
   font-family: 'Alegr-medium';
-  font-size: 48px;
+  font-size: rem(48px);
   padding: rem(46px) rem(26px);
   line-height: 1;
 }
 
 .menu__item-text {
+  width: 0;
   overflow: hidden;
   background-color: #000;
-  opacity: .75;
+  opacity: .93;
 }
 
-.menu--enabled {
-  width: 100%;
-  padding: rem(57px) rem(27px);
-}
 
-.menu--disabled {
-  width: 0;
-  padding: 0;
-}
+

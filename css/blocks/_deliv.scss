@@ -5,9 +5,9 @@
   &::before {
     content: "";
     position: absolute;
-    width: 242px;
-    height: 264px;
-    background: url('../img/bg/bg-form-blackberry.png') center center no-repeat;
+    width: rem(242px);
+    height: rem(264px);
+    background: url('../img/bg/bg-form-blackberry.png') center center / contain no-repeat;
     top: -16%;
     right: -3%;
   }
@@ -26,18 +26,18 @@
   &::after {
     content: "";
     position: absolute;
-    width: 135px;
-    height: 188px;
-    background: url('../img/bg/bg-form-leave.png') center center no-repeat;
+    width: rem(135px);
+    height: rem(188px);
+    background: url('../img/bg/bg-form-leave.png') center center / contain no-repeat;
     bottom: 10%;
     right: -6%;
   }
   &::before {
     content: "";
     position: absolute;
-    width: 63px;
-    height: 58px;
-    background: url('../img/bg/bg-form-berry.png') center center no-repeat;
+    width: rem(63px);
+    height: rem(58px);
+    background: url('../img/bg/bg-form-berry.png') center center / contain no-repeat;
     bottom: 2%;
     left: -7%;
   }
@@ -79,7 +79,7 @@
 .form__input-name {
   margin-top: 2px;
   font-family: 'Alegr';
-  font-size: 18px;
+  font-size: rem(18px);
   color: $dark_green;
 }
 

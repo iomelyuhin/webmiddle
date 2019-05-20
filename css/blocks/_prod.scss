@@ -4,10 +4,10 @@
 
   &::after {
     content: "";
-    width: 135px;
-    height: 112px;
+    width: rem(135px);
+    height: rem(112px);
     position: absolute;
-    background: url(../img/bg/prod-berry.png) center center no-repeat;
+    background: url(../img/bg/prod-berry.png) center center / contain no-repeat;
     bottom: -6%;
     right: 2%;
     z-index: 1;
@@ -17,19 +17,27 @@
 .prod__list {
   position: relative;
 }
+
+.prod__prev {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
 .arrow {
   width: 29px;
   height: 15px;
   fill: $black_t;
-  position: absolute;
-  top: 50%;
 }
 .side-left {
-  left: 10%;
   transform: rotate(90deg) translateY(-50%);
 }
-.side-right {
+
+.prod__next {
+  position: absolute;
+  top: 50%;
   right: 10%;
+}
+.side-right {
   transform: rotate(-90deg) translateY(-50%);
 }
 
@@ -59,7 +67,7 @@
 .prod__tittle {
   font-family: "Alegr-bold";
   color: $black_t;
-  font-size: 36px;
+  font-size: rem(36px);
   text-transform: uppercase;
 }
 
@@ -67,7 +75,7 @@
   margin-top: rem(41px);
   padding: 0;
   font-family: "Alegr-medium";
-  font-size: 24px;
+  font-size: rem(24px);
 }
 
 .prod__text {
@@ -108,7 +116,7 @@
 .prod__price {
   width: 50%;
   font-family: "Alegr-light";
-  font-size: 60px;
+  font-size: rem(60px);
   text-transform: uppercase;
 }
 

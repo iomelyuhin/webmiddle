@@ -6,8 +6,8 @@
 
   &::before {
     content: "";
-    width: 161px;
-    height: 315px;
+    width: rem(161px);
+    height: rem(315px);
     position: absolute;
     bottom: -20%;
     background: url('../img/bg/raspberries.png') center center / cover no-repeat;
@@ -55,8 +55,8 @@
 }
 
 .why__icon {
-  width: 125px;
-  height: 125px;
+  width: rem(125px);
+  height: rem(125px);
   border-radius: 50%;
   background-color: #f2f5f4;
   background-position: center center;
@@ -103,16 +103,16 @@
 }
 
 .arm {
-  width: 75px;
-  height: 64px;
+  width: rem(75px);
+  height: rem(64px);
 }
 
 .man {
-  width: 66px;
-  height: 69px;
+  width: rem(66px);
+  height: rem(69px);
 }
 
 .smile {
-  width: 70px;
-  height: 69px;
+  width: rem(70px);
+  height: rem(69px);
 }
