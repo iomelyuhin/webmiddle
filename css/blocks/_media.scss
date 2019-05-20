@@ -1,3 +1,34 @@
+@media (max-width: 992px) {
+  .hamburger {
+    display: inline-block;
+  }
+
+  
+  .header__tel {
+    display: none;
+  }
+  .header__nav-list {
+    display: none;
+    &.active {
+      display: flex;
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      z-index: 4;
+      background-color: #2f3234;
+      font-size: rem(36px);
+      line-height: 72px;
+      flex-direction: column;
+      opacity: 0.99;
+    }
+  }
+}  
+
 @media (max-width: 768px) {
 
   .header__hamburger-link {

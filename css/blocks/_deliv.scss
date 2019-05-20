@@ -107,6 +107,7 @@
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance:none;
+  opacity: 0;
 }
 
 .radio__fake {
@@ -118,6 +119,7 @@
   border: solid 1px #c9c9c9;
   background: linear-gradient(to top, #ededed, #ffffff);
   margin-right: 5px;
+
 }
 
 .radio__input:checked + .radio__fake::after {
@@ -130,6 +132,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $dark_green;
+
 }
 
 .radio__var {
@@ -168,6 +171,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
 
 .textarea__row.form__label, .radio__row.form__label, .check__row.form__label {
