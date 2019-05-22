@@ -68,9 +68,9 @@ console.log('');
 console.log('Massive #3');
 
 var form = {
-  name : 'Ilya',
-  lastName : 'Omelyukhin',
-  age : 29
+  name: 'Ilya',
+  lastName: 'Omelyukhin',
+  age: 29
 };
 
 console.log(form.name);
@@ -84,10 +84,12 @@ console.log('');
 console.log('Massive #4');
 
 function hello(human) {
-  var man = 'Привет, меня зовут ' + human.name + ' '  + human.lastName + ' и мне ' + human.age + ' лет';
+  var man = 'Привет, меня зовут ' + human.name + ' ' + human.lastName + ' и мне ' + human.age + ' лет';
   return man;
 };
 
 var human = form;
 
 console.log(hello(human));
+
+
