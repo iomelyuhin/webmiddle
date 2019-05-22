@@ -110,7 +110,6 @@
   }
 
   .lead__adv {
-    margin-bottom: 4%;
     margin-top: 5%;
   }
 
@@ -240,6 +239,7 @@
     text-align: center;
     width: 64%;
     margin: rem(65px) auto 0 auto;
+    align-items: center;
   }
 
   .feed__fb-text {
@@ -310,6 +310,10 @@
     width: 28%;
   }
 
+  .lead__cont-mess-desc {
+    width: 70%;
+  }
+
   .why__headline .why__desc {
     width: 100%;
   }
@@ -367,6 +371,14 @@
 
   .feed__content {
     width: 100%;
+  }
+
+  .feed__photo {
+    width: 60%;
+  }
+
+  .feed__img {
+    max-width: 100%;
   }
 
   .how__tittle {

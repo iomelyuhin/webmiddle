@@ -426,8 +426,7 @@ a {
   height: 100vh;
   width: 100%;
   min-height: 36.11111rem;
-  display: flex;
-  border: 2px solid red; }
+  display: flex; }
 
 .tittle {
   font-family: 'Alegr-bold';
@@ -555,7 +554,7 @@ a {
 .lead__cont {
   display: flex;
   flex-direction: column;
-  width: 50%; }
+  width: 45%; }
 
 .lead__cont-mess {
   display: flex;
@@ -571,12 +570,13 @@ a {
   font-size: 3.33333rem; }
 
 .lead__cont-mess-desc {
-  width: 73%;
+  width: 80%;
   font-family: 'Alegr';
   font-size: 1.16667rem;
   margin-top: 0.27778rem; }
 
 .lead__adv {
+  margin-bottom: 2.77778rem;
   z-index: 3; }
 
 .lead__adv-list {
@@ -1499,7 +1499,6 @@ a {
   .lead__cont-mess-desc {
     width: 50%; }
   .lead__adv {
-    margin-bottom: 4%;
     margin-top: 5%; }
   .lead__adv-list {
     padding: 0 4.44444rem; }
@@ -1569,7 +1568,8 @@ a {
     flex-direction: column;
     text-align: center;
     width: 64%;
-    margin: 3.61111rem auto 0 auto; }
+    margin: 3.61111rem auto 0 auto;
+    align-items: center; }
   .feed__fb-text {
     width: 100%; }
   .deliv__tittle {
@@ -1603,6 +1603,8 @@ a {
     padding: 0; }
   .lead__adv-item {
     width: 28%; }
+  .lead__cont-mess-desc {
+    width: 70%; }
   .why__headline .why__desc {
     width: 100%; }
   .why__item {
@@ -1630,6 +1632,10 @@ a {
     background-position: top right, bottom -30% left; }
   .feed__content {
     width: 100%; }
+  .feed__photo {
+    width: 60%; }
+  .feed__img {
+    max-width: 100%; }
   .how__tittle {
     z-index: 2; }
   .how__video {
