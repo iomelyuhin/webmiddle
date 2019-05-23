@@ -915,7 +915,8 @@ a {
 
 .menu__item-name {
   background: url("../img/bg/bg-menu-item1.jpg") center center/cover no-repeat;
-  height: 100%; }
+  height: 100%;
+  cursor: pointer; }
 
 .menu--honey {
   background: url("../img/bg/bg-menu-item2.jpg") center center/cover no-repeat; }
@@ -1144,7 +1145,8 @@ a {
   outline: none;
   font-family: 'Open Sans'; }
   .form__input:focus {
-    border-color: #dde3bd; }
+    border-color: #dde3bd;
+    transition: border-color .4s; }
 
 .form__input-name {
   margin-top: 2px;
@@ -1162,7 +1164,8 @@ a {
   outline: none;
   font-family: 'Open Sans'; }
   .form__textarea:focus {
-    border-color: #dde3bd; }
+    border-color: #dde3bd;
+    transition: border-color .4s; }
 
 .radio__label {
   display: flex;
@@ -1184,17 +1187,22 @@ a {
   border: solid 1px #c9c9c9;
   background: linear-gradient(to top, #ededed, #ffffff);
   margin-right: 5px; }
+  .radio__fake::after {
+    opacity: 0;
+    transition: opacity .4s;
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0f5a47; }
 
 .radio__input:checked + .radio__fake::after {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #0f5a47; }
+  opacity: 1;
+  transition: opacity .4s; }
 
 .radio__var {
   margin-bottom: 0px; }
@@ -1217,18 +1225,24 @@ a {
   background-color: #fff;
   display: block;
   margin-right: 0.27778rem; }
+  .check__fake::after {
+    content: "";
+    position: absolute;
+    background: url("../img/bg/checked.png") center center no-repeat;
+    width: 11px;
+    height: 9px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; }
 
 .check__input:checked + .check__fake::after {
-  content: "";
-  position: absolute;
-  background: url("../img/bg/checked.png") center center no-repeat;
-  width: 11px;
-  height: 9px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  opacity: 1;
+  transition: opacity .4s; }
 
-.textarea__row.form__label, .radio__row.form__label, .check__row.form__label {
+.textarea__row.form__label,
+.radio__row.form__label,
+.check__row.form__label {
   margin-right: 0; }
 
 .btn__row {

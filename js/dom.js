@@ -51,3 +51,5 @@ button.addEventListener('click', function(event){
   var result = input.value;
   console.log(result);
 });
+
+// Task 7

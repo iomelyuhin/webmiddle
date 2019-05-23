@@ -23,6 +23,7 @@
   margin-top: rem(55px);
   display: flex;
   position: relative;
+
   &::after {
     content: "";
     position: absolute;
@@ -32,6 +33,7 @@
     bottom: 10%;
     right: -6%;
   }
+
   &::before {
     content: "";
     position: absolute;
@@ -45,6 +47,7 @@
 
 .form__half {
   width: 50%;
+
   .textarea__row {
     .form__label {
       margin-right: 0;
@@ -61,7 +64,7 @@
 .form__label {
   margin-right: rem(20px);
   flex: 1;
-  
+
 }
 
 .form__input {
@@ -71,8 +74,10 @@
   border: 3px solid transparent;
   outline: none;
   font-family: 'Open Sans';
+
   &:focus {
     border-color: #dde3bd;
+    transition: border-color .4s;
   }
 }
 
@@ -92,8 +97,10 @@
   border: 3px solid transparent;
   outline: none;
   font-family: 'Open Sans';
+
   &:focus {
     border-color: #dde3bd;
+    transition: border-color .4s;
   }
 }
 
@@ -106,7 +113,7 @@
 .radio__input {
   appearance: none;
   -webkit-appearance: none;
-  -moz-appearance:none;
+  -moz-appearance: none;
   opacity: 0;
 }
 
@@ -120,19 +127,24 @@
   background: linear-gradient(to top, #ededed, #ffffff);
   margin-right: 5px;
 
+  &::after {
+    opacity: 0;
+    transition: opacity .4s;
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $dark_green;
+  }
 }
 
-.radio__input:checked + .radio__fake::after {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: $dark_green;
-
+.radio__input:checked+.radio__fake::after {
+  opacity: 1;
+  transition: opacity .4s;
 }
 
 .radio__var {
@@ -150,7 +162,7 @@
   height: 26px;
   appearance: none;
   //-webkit-appearance: none;
-  -moz-appearance:none;
+  -moz-appearance: none;
 }
 
 .check__fake {
@@ -160,21 +172,30 @@
   background-color: #fff;
   display: block;
   margin-right: rem(5px);
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url('../img/bg/checked.png') center center no-repeat;
+    width: 11px;
+    height: 9px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+
+  }
 }
 
-.check__input:checked + .check__fake::after {
-  content: "";
-  position: absolute;
-  background: url('../img/bg/checked.png') center center no-repeat;
-  width: 11px;
-  height: 9px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
+.check__input:checked+.check__fake::after {
+  opacity: 1;
+  transition: opacity .4s;
+
 }
 
-.textarea__row.form__label, .radio__row.form__label, .check__row.form__label {
+.textarea__row.form__label,
+.radio__row.form__label,
+.check__row.form__label {
   margin-right: 0;
 }
 
