@@ -30,6 +30,7 @@
     .menu__item-text {
       width: 100%;
       padding: rem(57px) rem(27px);
+      transition: width .4s;
     }
   }
 }
@@ -39,7 +40,6 @@
   padding: 0;
   max-width: rem(100px);
   margin: 0;
-  vertical-align: middle;
 }
 
 .menu__item-name {
@@ -71,4 +71,6 @@
   overflow: hidden;
   background-color: #000;
   opacity: .93;
+  transition: width .4s;
+
 }
