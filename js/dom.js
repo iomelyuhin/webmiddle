@@ -62,8 +62,8 @@ right.addEventListener("click", function() {
   // напишите здесь код, который сдвигает items на 100px вправо
   let styleRight = getComputedStyle(items).right;
   let styleParse = parseInt(styleRight);
-  var right = styleParse + 100;
-  var rightMove = right + "px";
+  let right = styleParse + 100;
+  let rightMove = right + "px";
   
   items.style.right = rightMove;
   // если items уже сдвинут на 5 элементов впарво, то больше элементы сдвигать не надо, т.к. вы достигли конца списка
@@ -76,8 +76,8 @@ left.addEventListener("click", function() {
   // напишите здесь код, который сдвигает items на 100px влево
   let styleLeft = getComputedStyle(items).right;
   let styleParse = parseInt(styleLeft);
-  var left = styleParse - 100;
-  var leftMove = left + "px";
+  let left = styleParse - 100;
+  let leftMove = left + "px";
   
   items.style.right = leftMove;  
   
