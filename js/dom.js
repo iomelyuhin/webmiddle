@@ -53,3 +53,37 @@ button.addEventListener('click', function(event){
 });
 
 // Task 7
+
+const left = document.querySelector("#left");
+const right = document.querySelector("#right");
+const items = document.querySelector("#items");
+
+right.addEventListener("click", function() {
+  // напишите здесь код, который сдвигает items на 100px вправо
+  let styleRight = getComputedStyle(items).right;
+  let styleParse = parseInt(styleRight);
+  var right = styleParse + 100;
+  var rightMove = right + "px";
+  
+  items.style.right = rightMove;
+  // если items уже сдвинут на 5 элементов впарво, то больше элементы сдвигать не надо, т.к. вы достигли конца списка
+  if (styleParse >= 500) {
+    items.style.right = '500px';
+  }
+});
+
+left.addEventListener("click", function() {
+  // напишите здесь код, который сдвигает items на 100px влево
+  let styleLeft = getComputedStyle(items).right;
+  let styleParse = parseInt(styleLeft);
+  var left = styleParse - 100;
+  var leftMove = left + "px";
+  
+  items.style.right = leftMove;  
+  
+  // если item находится в самом начале, то больше элементы сдвигать влево не надо, т.к. вы достигли начала списка
+  if (styleParse <= 0) {
+    items.style.right = '0px';
+  }
+
+});
