@@ -10,25 +10,38 @@ hamburger.addEventListener('click', function () {
 hamburgerMenu.addEventListener('click', function (event) {
   event.preventDefault();
   let target = event.target;
-  if (target.classList.contains('header__nav-link')){
+  if (target.classList.contains('header__nav-link')) {
     hamburgerMenu.classList.remove('active');
     hamburger.classList.toggle('is-active');
 
-  } 
+  }
 })
 
 //slider product
-var productList = document.querySelector('.prod__list');
-var arrowPrev = document.querySelector('.prod__prev');
-var arrowNext = document.querySelector('.prod__next');
+var list = document.querySelector('.prod__list');
+var prev = document.querySelector('.prod__prev');
+var next = document.querySelector('.prod__next');
 
-arrowNext.addEventListener('click', function (event) {
-  event.preventDefault();
-  productList.style.right = '100%';
+var minNext = 0;
+var maxNext = 100;
+var step = 100;
+var currentNext = 0;
+
+list.style.right = currentNext;
+
+next.addEventListener('click', function (e) {
+  e.preventDefault();
+  if (currentNext < maxNext) {
+    currentNext += step;
+    list.style.right = currentNext + "%";
+  }
 });
-arrowPrev.addEventListener('click', function (event) {
-  event.preventDefault();
-  productList.style.right = '0';
+prev.addEventListener('click', function (e) {
+  e.preventDefault();
+  if (currentNext > minNext) {
+    currentNext -= step;
+    list.style.right = currentNext + "%";
+  }
 });
 
 //crew
@@ -36,33 +49,51 @@ var crewItemArr = document.querySelectorAll('.crew__item');
 
 for (let i = 0; i < crewItemArr.length; i++) {
   const crewItem = crewItemArr[i];
-  
+
   crewItem.addEventListener('click', function (event) {
-    let target = event.target;
-    if (target.classList.contains('crew__item-tittle') || target.classList.contains('crew__img')) {
-      crewItem.classList.toggle('active');
-    };
+    event.preventDefault();
+    if (crewItem.classList.contains('active')) {
+      crewItem.classList.remove('active');
+    } else {
+      for (let i = 0; i < crewItemArr.length; i++) {
+        const crew = crewItemArr[i];
+        crew.classList.remove('active');
+      }
+
+      let target = event.target;
+
+      if (target.classList.contains('crew__item-tittle') || target.classList.contains('crew__img')) {
+        crewItem.classList.toggle('active');
+      };
+    }
+
   });
 };
 
 //menu
-var menuItems = document.querySelectorAll('.menu__item');
+var menuItemArr = document.querySelectorAll('.menu__item');
 
-for (let i = 0; i < menuItems.length; i++) {
-  const menuItem = menuItems[i];
+for (let i = 0; i < menuItemArr.length; i++) {
+  const menuItem = menuItemArr[i];
   menuItem.addEventListener('click', function (event) {
-    let target = event.target;
     if (menuItem.classList.contains('active')) {
-      menuItem.classList.toggle('active');
-      
-    } else{
-      if (target.classList.contains('menu__item-tittle')) {
-        menuItem.classList.toggle('active');
-        
+      menuItem.classList.remove('active');
+    } else {
+      for (let i = 0; i < menuItemArr.length; i++) {
+        const menuItem = menuItemArr[i];
+        menuItem.classList.remove('active');
       }
 
-    }
-  })
-  
-}
+      let target = event.target;
+      if (target.classList.contains('menu__link') ||
+        target.classList.contains('menu__item-name') ||
+        target.classList.contains('menu__item-tittle')) {
+
+        menuItem.classList.add('active');
+      };
+    };
+  });
+};
+
+console.log('010101');
 

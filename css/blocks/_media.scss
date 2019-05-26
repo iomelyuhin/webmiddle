@@ -330,7 +330,7 @@
     width: 90%;
   }
 
-  .prod__list {
+  .prod__content {
     width: 85%;
   }
 
@@ -359,9 +359,12 @@
 
   .menu__item {
     &.active {
-      position: absolute;
       z-index: 5;
     }
+  }
+
+  .menu__item-tittle {
+    padding: 5rem rem(6px);
   }
 
 .feed {

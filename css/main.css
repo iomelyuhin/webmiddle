@@ -4218,7 +4218,7 @@ a {
     bottom: -13%; }
   .prod__image {
     width: 90%; }
-  .prod__list {
+  .prod__content {
     width: 85%; }
   .prod__prev {
     left: 0; }
@@ -4231,8 +4231,9 @@ a {
   .crew__cont {
     margin-top: 0.55556rem; }
   .menu__item.active {
-    position: absolute;
     z-index: 5; }
+  .menu__item-tittle {
+    padding: 5rem 0.33333rem; }
   .feed {
     background-position: top right, bottom -30% left; }
   .feed__content {
