@@ -3955,10 +3955,6 @@ a {
   margin: 0;
   overflow: visible;
   z-index: 4; }
-  .hamburger.is-active {
-    position: fixed;
-    right: 20px;
-    top: 20px; }
 
 .hamburger:hover {
   opacity: 0.7; }
