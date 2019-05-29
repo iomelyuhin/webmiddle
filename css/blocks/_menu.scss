@@ -28,9 +28,11 @@
   display: flex;
   &.active {
     .menu__item-text {
-      width: 100%;
-      padding: rem(57px) rem(27px);
-      transition: width .4s;
+      max-width: rem(530px);
+      transition: max-width .4s;
+      & p {
+        padding: rem(57px) rem(27px);
+      }
     }
   }
 }
@@ -68,10 +70,10 @@
 }
 
 .menu__item-text {
-  width: 0;
+  max-width: 0;
   overflow: hidden;
   background-color: #000;
   opacity: .93;
-  transition: width .4s;
+  transition: max-width .4s;
 
 }
