@@ -35,11 +35,19 @@ next.addEventListener('click', function (e) {
     currentNext += step;
     list.style.right = currentNext + "%";
   }
+  else if (currentNext == maxNext) {
+    currentNext = 0;
+    list.style.right = currentNext + "%";
+  }
 });
 prev.addEventListener('click', function (e) {
   e.preventDefault();
   if (currentNext > minNext) {
     currentNext -= step;
+    list.style.right = currentNext + "%";
+  }
+  else if (currentNext == minNext) {
+    currentNext = maxNext;
     list.style.right = currentNext + "%";
   }
 });

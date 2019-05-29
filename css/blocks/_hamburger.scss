@@ -1,5 +1,5 @@
 .hamburger {
-  padding: 15px 15px;
+  padding: rem(15px) rem(15px);
   display: none;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -30,8 +30,8 @@
 }
 
 .hamburger-box {
-  width: 40px;
-  height: 24px;
+  width: rem(40px);
+  height: rem(24px);
   display: inline-block;
   position: relative;
 }
@@ -45,8 +45,8 @@
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-  width: 40px;
-  height: 4px;
+  width: rem(40px);
+  height: rem(4px);
   background-color: #fff;
   border-radius: 4px;
   position: absolute;
@@ -62,11 +62,11 @@
 }
 
 .hamburger-inner::before {
-  top: -10px;
+  top: rem(-10px);
 }
 
 .hamburger-inner::after {
-  bottom: -10px;
+  bottom: rem(-10px);
 }
 
 //Squeeze

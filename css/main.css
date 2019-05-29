@@ -3941,7 +3941,7 @@ a {
   padding: 2.11111rem 3.33333rem; }
 
 .hamburger {
-  padding: 15px 15px;
+  padding: 0.83333rem 0.83333rem;
   display: none;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -3968,8 +3968,8 @@ a {
   background-color: #fff; }
 
 .hamburger-box {
-  width: 40px;
-  height: 24px;
+  width: 2.22222rem;
+  height: 1.33333rem;
   display: inline-block;
   position: relative; }
 
@@ -3981,8 +3981,8 @@ a {
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-  width: 40px;
-  height: 4px;
+  width: 2.22222rem;
+  height: 0.22222rem;
   background-color: #fff;
   border-radius: 4px;
   position: absolute;
@@ -3996,10 +3996,10 @@ a {
   display: block; }
 
 .hamburger-inner::before {
-  top: -10px; }
+  top: -0.55556rem; }
 
 .hamburger-inner::after {
-  bottom: -10px; }
+  bottom: -0.55556rem; }
 
 .hamburger--squeeze .hamburger-inner {
   transition-duration: 0.075s;
