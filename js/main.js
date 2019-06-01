@@ -103,5 +103,36 @@ for (let i = 0; i < menuItemArr.length; i++) {
   });
 };
 
-console.log('010101');
+//feeds slider
 
+var feedItems = document.querySelectorAll('.feed__item');
+var feedAvatars = document.querySelectorAll('.feed__ava-item');
+
+for (let i = 0; i < feedAvatars.length; i++) {
+  const feedAvatar = feedAvatars[i];
+  const feedItem = feedItems[i];
+
+  feedAvatar.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (feedAvatar.classList.contains('active') && feedItem.classList.contains('active')) {
+      feedAvatar.classList.remove('active');
+      feedItem.classList.remove('active');
+    } else {
+      for (let i = 0; i < feedAvatars.length; i++) {
+        const feedAvatar = feedAvatars[i];
+        const feedItem = feedItems[i];
+
+        feedAvatar.classList.remove('active');
+        feedItem.classList.remove('active');
+      };
+    }
+    let target = e.target;
+    if (target.classList.contains('feed__ava-item') ||
+      target.classList.contains('feed__ava-link') ||
+      target.classList.contains('feed__ava-img')) {
+      feedAvatar.classList.add('active');
+      feedItem.classList.add('active');
+    }
+
+  });
+}

@@ -248,7 +248,7 @@
                 <img src="img/photos/photo_1.jpg" alt="" class="crew__img">
               </div>
               <div class="crew__item-tittle trang">
-                  Борис Федорович
+                Борис Федорович
               </div>
               <div class="crew__desc">
                 <div class="crew__position">Оператор</div>
@@ -260,7 +260,7 @@
                 <img src="img/photos/photo_2.jpg" alt="" class="crew__img">
               </div>
               <div class="crew__item-tittle trang">
-                  Алла Иванова
+                Алла Иванова
               </div>
               <div class="crew__desc">
                 <div class="crew__position">Оператор</div>
@@ -272,7 +272,7 @@
                 <img src="img/photos/photo_3.jpg" alt="" class="crew__img">
               </div>
               <div class="crew__item-tittle trang">
-                  Кирилл Матросов
+                Кирилл Матросов
               </div>
               <div class="crew__desc">
                 <div class="crew__position">Оператор</div>
@@ -284,7 +284,7 @@
                 <img src="img/photos/photo_4.jpg" alt="" class="crew__img">
               </div>
               <div class="crew__item-tittle trang">
-                  Мила Рыжкова
+                Мила Рыжкова
               </div>
               <div class="crew__desc">
                 <div class="crew__position">Оператор</div>
@@ -360,23 +360,60 @@
       <div class="container container--feed">
         <h2 class="feed__tittle tittle">Отзывы</h2>
         <div class="feed__content">
-          <div class="feed__photo">
-            <img src="img/photos/feed_1.jpg" alt="photo" class="feed__img">
-          </div>
-          <div class="feed__fb">
-            <h3 class="feed__fb-tittle">Лучший перекус</h3>
-            <div class="feed__fb-text">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis sapiente nostrum sint, maiores,
-                excepturi rem a doloremque cupiditate itaque vero, reiciendis magnam harum impedit fugit.
-              </p>
-            </div>
-            <div class="feed__name">Алена Хмельницкая</div>
-          </div>
+          <ul class="feed__list">
+            <li class="feed__item active animated fadeIn">
+              <div class="feed__photo">
+                <img src="img/photos/feed_1.jpg" alt="photo" class="feed__img">
+              </div>
+              <div class="feed__fb">
+                <h3 class="feed__fb-tittle">Лучший перекус</h3>
+                <div class="feed__fb-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis sapiente nostrum sint, maiores,
+                    excepturi rem a doloremque cupiditate itaque vero, reiciendis magnam harum impedit fugit.
+                  </p>
+                </div>
+                <div class="feed__name">Алена Хмельницкая</div>
+              </div>
+            </li>
+            <li class="feed__item animated fadeIn">
+              <div class="feed__photo">
+                <img src="img/photos/feed_1.jpg" alt="photo" class="feed__img">
+              </div>
+              <div class="feed__fb">
+                <h3 class="feed__fb-tittle">2 Лучший перекус</h3>
+                <div class="feed__fb-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis sapiente nostrum sint, maiores,
+                    excepturi rem a doloremque cupiditate itaque vero, reiciendis magnam harum impedit fugit.
+                  </p>
+                </div>
+                <div class="feed__name">Алена Хмельницкая</div>
+              </div>
+
+            </li>
+            <li class="feed__item animated fadeIn">
+              <div class="feed__photo">
+                <img src="img/photos/feed_1.jpg" alt="photo" class="feed__img">
+              </div>
+              <div class="feed__fb">
+                <h3 class="feed__fb-tittle">3 Лучший перекус</h3>
+                <div class="feed__fb-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis sapiente nostrum sint, maiores,
+                    excepturi rem a doloremque cupiditate itaque vero, reiciendis magnam harum impedit fugit.
+                  </p>
+                </div>
+                <div class="feed__name">Алена Хмельницкая</div>
+              </div>
+
+            </li>
+          </ul>
+
         </div>
         <div class="feed__ava">
           <ul class="feed__ava-list">
-            <li class="feed__ava-item active-feed">
+            <li class="feed__ava-item active">
               <a href="#" class="feed__ava-link">
                 <img src="img/photos/feed_1.jpg" alt="" class="feed__ava-img">
               </a>
@@ -404,41 +441,41 @@
     <section class="section deliv">
       <div class="container container--deliv">
         <h2 class="deliv__tittle tittle">Закажите доставку</h2>
-        <form action="" class="deliv__form form">
+        <form action="" class="deliv__form form" id="myForm">
           <div class="deliv__form-cont">
             <div class="form__half">
               <div class="form__row">
                 <label class="form__label">
                   <h3 class="form__input-name">Имя</h3>
-                  <input type="text" class="form__input" placeholder="Ди Каприо">
+                  <input type="text" class="form__input" placeholder="Ди Каприо" name="name" required>
                 </label>
                 <label class="form__label">
                   <h3 class="form__input-name">Телефон</h3>
-                  <input type="text" class="form__input" placeholder="+79639630022">
+                  <input type="text" class="form__input" placeholder="+79639630022" name="phone" required>
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__label">
                   <h3 class="form__input-name">Улица</h3>
-                  <input type="text" class="form__input" placeholder="Волл-Стрит">
+                  <input type="text" class="form__input" placeholder="Волл-Стрит" name="street" required>
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__label">
                   <h3 class="form__input-name">Дом</h3>
-                  <input type="text" class="form__input" placeholder="6">
+                  <input type="text" class="form__input" placeholder="6" name="house" required>
                 </label>
                 <label class="form__label">
                   <h3 class="form__input-name">Корпус</h3>
-                  <input type="text" class="form__input" placeholder="2">
+                  <input type="text" class="form__input" placeholder="2" name="housing">
                 </label>
                 <label class="form__label">
                   <h3 class="form__input-name">Квартира</h3>
-                  <input type="text" class="form__input" placeholder="55">
+                  <input type="text" class="form__input" placeholder="55" name="flat" required>
                 </label>
                 <label class="form__label">
                   <h3 class="form__input-name">Этаж</h3>
-                  <input type="text" class="form__input" placeholder="3">
+                  <input type="text" class="form__input" placeholder="3" name="floor" required>
                 </label>
               </div>
             </div>
@@ -446,7 +483,7 @@
               <div class="form__row textarea__row">
                 <label class="form__label">
                   <h3 class="form__input-name">Комментарий</h3>
-                  <textarea type="text" class="form__textarea" placeholder="Ваше сообщение"></textarea>
+                  <textarea type="text" class="form__textarea" placeholder="Ваше сообщение" name="message"></textarea>
                 </label>
               </div>
               <div class="form__row radio__row">
@@ -474,7 +511,7 @@
               </div>
               <div class="form__row btn__row">
                 <div class="form__btn-item">
-                  <button type="submit" class=" btn__row-link btn__link color--dark">
+                  <button type="submit" id="sendButton" class=" btn__row-link btn__link color--dark">
                     Заказать
                   </button>
                 </div>
