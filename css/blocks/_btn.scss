@@ -9,9 +9,16 @@
   text-transform: uppercase;
   color: #0f5a47;
   box-shadow: 0px 2px 7px rgba(80, 80, 80, .5);
+  outline: none;
 }
 
 .color--dark {
   background: $dark_green;
   color: #fff;
+}
+
+.form__clear {
+  margin-left: 30px;
+  outline: none;
+  color: $dark_green;
 }

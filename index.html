@@ -457,13 +457,13 @@
               <div class="form__row">
                 <label class="form__label">
                   <h3 class="form__input-name">Улица</h3>
-                  <input type="text" class="form__input" placeholder="Волл-Стрит" name="street" required>
+                  <input type="text" class="form__input" placeholder="Волл-Стрит" name="street">
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__label">
                   <h3 class="form__input-name">Дом</h3>
-                  <input type="text" class="form__input" placeholder="6" name="house" required>
+                  <input type="text" class="form__input" placeholder="6" name="house">
                 </label>
                 <label class="form__label">
                   <h3 class="form__input-name">Корпус</h3>
@@ -471,11 +471,11 @@
                 </label>
                 <label class="form__label">
                   <h3 class="form__input-name">Квартира</h3>
-                  <input type="text" class="form__input" placeholder="55" name="flat" required>
+                  <input type="text" class="form__input" placeholder="55" name="flat">
                 </label>
                 <label class="form__label">
                   <h3 class="form__input-name">Этаж</h3>
-                  <input type="text" class="form__input" placeholder="3" name="floor" required>
+                  <input type="text" class="form__input" placeholder="3" name="floor">
                 </label>
               </div>
             </div>
@@ -483,19 +483,20 @@
               <div class="form__row textarea__row">
                 <label class="form__label">
                   <h3 class="form__input-name">Комментарий</h3>
-                  <textarea type="text" class="form__textarea" placeholder="Ваше сообщение" name="message"></textarea>
+                  <textarea type="text" class="form__textarea" placeholder="Ваше сообщение" name="comment"
+                    required></textarea>
                 </label>
               </div>
               <div class="form__row radio__row">
                 <label class="radio__label">
-                  <input type="radio" name="money" class="radio__input" required>
+                  <input type="radio" name="money" class="radio__input">
                   <div class="radio__fake"></div>
                   <div class="radio__var form__input-name">
                     Потребуется сдача
                   </div>
                 </label>
                 <label class="radio__label">
-                  <input type="radio" name="money" class="radio__input" required>
+                  <input type="radio" name="money" class="radio__input">
                   <div class="radio__fake"></div>
                   <div class="radio__var form__input-name">
                     Оплата по карте
@@ -573,16 +574,17 @@
 
     </section>
 
-    <div class="modal modal--inactive">
-      <div class="modal__message">
-        <div class="modal__text">Сообщение отправлено</div>
-        <div class="modal__btn btn">
-          <a href="" class="modal__btn btn__link color--dark">Закрыть</a>
-        </div>
-      </div>
-    </div>
   </div>
-
+  <script type="template" id="overlayTemplate">
+      <div class="modal">
+          <div class="modal__message">
+            <div class="modal__text"></div>
+            <div class="close__btn btn">
+              <a href="" class="btn__link color--dark">Закрыть</a>
+            </div>
+          </div>
+      </div>
+  </script>
   <script src="js/main.js"></script>
 </body>
 
