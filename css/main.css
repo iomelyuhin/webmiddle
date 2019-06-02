@@ -444,6 +444,9 @@ a {
   font-size: 1rem;
   color: #666; }
 
+.locked {
+  overflow: hidden; }
+
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.7.0
