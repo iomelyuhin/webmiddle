@@ -249,6 +249,16 @@
     align-items: center;
   }
 
+  .feed__list {
+    display: flex;
+  
+  }
+  .feed__item {
+    //display: flex;
+    flex-direction: column;
+
+  }
+
   .feed__fb-text {
     width: 100%;
   }
@@ -385,6 +395,7 @@
 
   .feed__photo {
     width: 60%;
+    align-self: center;
   }
 
   .feed__img {

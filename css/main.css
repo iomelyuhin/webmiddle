@@ -4190,6 +4190,10 @@ a {
     width: 64%;
     margin: 3.61111rem auto 0 auto;
     align-items: center; }
+  .feed__list {
+    display: flex; }
+  .feed__item {
+    flex-direction: column; }
   .feed__fb-text {
     width: 100%; }
   .deliv__tittle {
@@ -4254,7 +4258,8 @@ a {
   .feed__content {
     width: 100%; }
   .feed__photo {
-    width: 60%; }
+    width: 60%;
+    align-self: center; }
   .feed__img {
     max-width: 100%; }
   .how__tittle {
