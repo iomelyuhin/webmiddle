@@ -18,39 +18,163 @@ hamburgerMenu.addEventListener('click', function (event) {
   }
 })
 
-//slider product
-var list = document.querySelector('.prod__list');
-var prev = document.querySelector('.prod__prev');
-var next = document.querySelector('.prod__next');
+////slider product
+//var list = document.querySelector('.prod__list');
+//var prev = document.querySelector('.prod__prev');
+//var next = document.querySelector('.prod__next');
+//
+//var minNext = 0;
+//var maxNext = 100;
+//var step = 100;
+//var currentNext = 0;
+//
+//list.style.right = currentNext;
+//
+//next.addEventListener('click', function (e) {
+//  e.preventDefault();
+//  if (currentNext < maxNext) {
+//    currentNext += step;
+//    list.style.right = currentNext + "%";
+//  }
+//  else if (currentNext == maxNext) {
+//    currentNext = 0;
+//    list.style.right = currentNext + "%";
+//  }
+//});
+//prev.addEventListener('click', function (e) {
+//  e.preventDefault();
+//  if (currentNext > minNext) {
+//    currentNext -= step;
+//    list.style.right = currentNext + "%";
+//  }
+//  else if (currentNext == minNext) {
+//    currentNext = maxNext;
+//    list.style.right = currentNext + "%";
+//  }
+//});
 
-var minNext = 0;
-var maxNext = 100;
-var step = 100;
-var currentNext = 0;
+//generate dots
+$(function () {
 
-list.style.right = currentNext;
-
-next.addEventListener('click', function (e) {
-  e.preventDefault();
-  if (currentNext < maxNext) {
-    currentNext += step;
-    list.style.right = currentNext + "%";
-  }
-  else if (currentNext == maxNext) {
-    currentNext = 0;
-    list.style.right = currentNext + "%";
-  }
+  var generateDots = function () {
+    $('.section').each(function () {
+      var dot = $('<li>', {
+        attr: {
+          class: 'onepage__item'
+        },
+        html: '<a href="#" class="onepage__link"></a>'
+      });
+      $('.onepage__list').append(dot);
+    });
+  };
+  generateDots();
 });
-prev.addEventListener('click', function (e) {
-  e.preventDefault();
-  if (currentNext > minNext) {
-    currentNext -= step;
-    list.style.right = currentNext + "%";
+
+//onePageScroll
+var sections = $('.section');
+var display = $('.maincontent');
+let inscroll = false;
+
+
+var performTransition = sectionEq => {
+  if (inscroll) return;
+
+  inscroll = true;
+  
+  var position = `${sectionEq * -100}%`
+
+  sections
+    .eq(sectionEq)
+    .addClass('active')
+    .siblings()
+    .removeClass('active');
+
+  display.css({
+    transform: `translateY(${position})`
+  });
+
+  setTimeout(() => {
+    inscroll = false;
+  }, 500 + 300);
+};
+
+var scrollToSection = direction => {
+  var activeSection = sections.filter('.active');
+  var nextSection = activeSection.next();
+  var prevSection = activeSection.prev();
+
+  if (direction === "next" && nextSection.length) {
+    performTransition(nextSection.index());
+  };
+  if (direction === "prev" && prevSection.length) {
+    performTransition(prevSection.index());
+  };
+
+};
+
+$('.wrapper').on('wheel', e => {
+  const deltaY = e.originalEvent.deltaY;
+
+  if (deltaY > 0) {
+    scrollToSection("next");
+  };
+
+  if (deltaY < 0) {
+    scrollToSection("prev");
+
+  };
+});
+
+//Slider product jQuery
+$(function () {
+
+  var moveSlide = function (container, slideNum) {
+    var
+      items = container.find('.prod__item'),
+      activeSlide = items.filter('.active'),
+      regItem = items.eq(slideNum),
+      regIndex = regItem.index(),
+      list = container.find('.prod__list'),
+      duration = 500;
+
+    if (regItem.length) {
+      list.animate({
+        'left': -regIndex * 100 + '%'
+      }, duration, function () {
+        activeSlide.removeClass('active');
+        regItem.addClass('active');
+      });
+    }
   }
-  else if (currentNext == minNext) {
-    currentNext = maxNext;
-    list.style.right = currentNext + "%";
-  }
+
+  $('.prod__controls').on('click', function (e) {
+    e.preventDefault();
+    var $this = $(this),
+      container = $this.closest('.container--prod'),
+      items = $('.prod__item', container),
+      activeItem = items.filter('.active'),
+      existedItem, edgeItem, regItem;
+
+
+    if ($this.hasClass('controls--next')) {
+      existedItem = activeItem.next();
+      edgeItem = items.first();
+    }
+
+    if ($this.hasClass('controls--prev')) {
+      existedItem = activeItem.prev();
+      edgeItem = items.last();
+    }
+
+    regItem = existedItem.length ? existedItem.index() : edgeItem.index()
+
+    moveSlide(container, regItem);
+
+  });
+
+
+
+
 });
 
 //crew
@@ -148,6 +272,15 @@ for (let i = 0; i < feedAvatars.length; i++) {
 
   });
 }
+
+//Feeds slider jquery 
+$(function () {
+
+
+
+});
+
+
 //Overlay create
 //const openButton = document.querySelector(".openOverlay");
 const template = document.querySelector("#overlayTemplate").innerHTML;

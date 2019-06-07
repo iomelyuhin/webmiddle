@@ -24,9 +24,12 @@
   transition: right .4s;
 }
 
-.prod__prev {
+.prod__controls {
   position: absolute;
   top: 50%;
+}
+
+.controls--prev {
   left: 2%;
   transform: rotate(90deg) translateY(-50%);
 }
@@ -36,9 +39,7 @@
   fill: $black_t;
 }
 
-.prod__next {
-  position: absolute;
-  top: 50%;
+.controls--next {
   right: 2%;
   transform: rotate(-90deg) translateY(-50%);
 }
