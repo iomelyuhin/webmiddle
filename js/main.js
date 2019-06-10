@@ -57,10 +57,11 @@ hamburgerMenu.addEventListener('click', function (event) {
 $(function () {
 
   var generateDots = function () {
-    $('.section').each(function () {
+    $('.section').each(function (index) {
       var dot = $('<li>', {
         attr: {
-          class: 'onepage__item'
+          class: 'onepage__item',
+          'data-scroll-to' : index + 1
         },
         html: '<a href="#" class="onepage__link"></a>'
       });
@@ -68,6 +69,7 @@ $(function () {
     });
   };
   generateDots();
+  $('.onepage__item:first-child').addClass('active');
 });
 
 //onePageScroll
@@ -75,9 +77,25 @@ var sections = $('.section');
 var display = $('.maincontent');
 let inscroll = false;
 
+const md = new MobileDetect(window.navigator.userAgent);
+
+const isMobile = md.mobile();
+
+const switchActiveClassInSideMenu = menuItemIndex => {
+  $(".onepage__item")
+    .eq(menuItemIndex)
+    .addClass("active")
+    .siblings()
+    .removeClass("active");
+};
 
 var performTransition = sectionEq => {
   if (inscroll) return;
+
+  const sectionEqNum = parseInt(sectionEq);
+
+  if (!!sectionEqNum === false)
+    console.error("не верное значение для аргуемента sectionEq");
 
   inscroll = true;
   
@@ -95,6 +113,7 @@ var performTransition = sectionEq => {
 
   setTimeout(() => {
     inscroll = false;
+    switchActiveClassInSideMenu(sectionEq);
   }, 500 + 300);
 };
 
@@ -124,6 +143,38 @@ $('.wrapper').on('wheel', e => {
 
   };
 });
+
+$('.wrapper').on('touchmove', e => {
+  e.preventDefault();
+});
+
+$(document).on("keydown", e => {
+  switch (e.keyCode) {
+    case 38:
+      scrollToSection("prev");
+      break;
+    case 40:
+      scrollToSection("next");
+      break;
+  }
+});
+
+$("[data-scroll-to]").on("click", e => {
+  e.preventDefault();
+  const target = $(e.currentTarget).attr("data-scroll-to");
+  console.log(target);
+  
+  performTransition(target);
+});
+
+if (isMobile) {
+  $(window).swipe({
+    swipe: function(event, direction) {
+      const nextOrPrev = direction === "up" ? "next" : "prev";
+      scrollToSection(nextOrPrev);
+    }
+  });
+}
 
 //Slider product jQuery
 $(function () {
