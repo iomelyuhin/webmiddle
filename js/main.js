@@ -162,7 +162,6 @@ $(document).on("keydown", e => {
 $("[data-scroll-to]").on("click", e => {
   e.preventDefault();
   const target = $(e.currentTarget).attr("data-scroll-to");
-  console.log(target);
   
   performTransition(target);
 });
@@ -174,7 +173,7 @@ if (isMobile) {
       scrollToSection(nextOrPrev);
     }
   });
-}
+};
 
 //Slider product jQuery
 $(function () {
