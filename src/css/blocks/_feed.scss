@@ -1,0 +1,96 @@
+.feed {
+  background-image: url(../img/bg/berry_fb.png), 
+    url(../img/bg/leave_fb.png);
+  background-repeat: no-repeat no-repeat;
+  background-position: top right, bottom left;
+  background-size: rem(173px) rem(99px), rem(134px) rem(422px);
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+}
+
+.container--feed {
+  height: 100%;
+}
+
+.feed__tittle {
+  text-align: center;
+}
+
+.feed__content {
+  margin-top: rem(60px);
+  //display: flex;
+  background: #f8faf9;
+  //padding: rem(51px) rem(45px);
+  background-image: url(../img/bg/branch.png), 
+    url(../img/bg/ellipse.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, top center;
+}
+
+.feed__item {
+  display: none;
+  opacity: 0;
+  padding: rem(51px) rem(45px);
+
+  &.active {
+    display: flex;
+    opacity: 1;
+  }
+}
+
+.feed__fb {
+  margin-left: rem(20px);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.feed__fb-tittle {
+  font-family: 'Alegr-medium';
+  font-size: rem(30px);
+  color: #323232;
+}
+
+.feed__fb-text {
+  width: 75%;
+}
+
+.feed__name {
+  font-family: 'Alegr-medium';
+  font-size: rem(18px);
+}
+
+.feed__ava {
+  margin-top: rem(42px);
+}
+
+.feed__ava-list {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.feed__ava-item {
+  border: 8px solid transparent;
+  width: rem(94px);
+  height: rem(94px);
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-left: rem(40px);
+  transition: border-color .4s;
+  &:first-child {
+    margin-left: 0;
+  }
+  &.active {
+    border: 8px solid $dark_green;
+    transition: border-color .4s;
+
+  }
+}
+
+.feed__ava-img {
+  width: 100%;
+  cursor: pointer;
+}

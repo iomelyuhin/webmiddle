@@ -1,0 +1,49 @@
+.social {
+  display: flex;
+  height: 100%;
+}
+
+.social__item {
+  margin-right: rem(20px);
+  display: flex;
+  align-items: center;
+
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+}
+
+.social__icon {
+  fill: #b2b2b2;
+  margin: auto;
+
+  &:hover {
+    fill: #000;
+  }
+}
+
+.vk {
+  width: 23px;
+  height: 13px;
+}
+
+.fb {
+  width: 20px;
+  height: 20px;
+}
+
+.ig {
+  width: 20px;
+  height: 20px;
+}
+
+.tw {
+  width: 20px;
+  height: 16px;
+}

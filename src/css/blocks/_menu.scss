@@ -1,0 +1,79 @@
+.menu {
+  color: #fff;
+  background-color: #000;
+  background-image: url(../img/bg/bg-menu.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu__tittle {
+  margin: rem(100px) rem(80px);
+  font-family: 'Alegr-bold';
+  font-size: rem(48px);
+  text-transform: uppercase;
+}
+
+.menu__list {
+  position: absolute;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  right: 0;
+  height: 100%;
+  width: 60%;
+}
+.menu__item {
+  display: flex;
+  &.active {
+    .menu__item-text {
+      max-width: rem(530px);
+      transition: max-width .4s;
+      & p {
+        padding: rem(57px) rem(27px);
+      }
+    }
+  }
+}
+.menu__link {
+  display: block;
+  color: inherit;
+  padding: 0;
+  max-width: rem(100px);
+  margin: 0;
+  cursor: pointer;
+}
+
+.menu__item-name {
+  background: url('../img/bg/bg-menu-item1.jpg') center center / cover no-repeat;
+  height: 100%;
+  cursor: pointer;
+}
+.menu--honey {
+  background: url('../img/bg/bg-menu-item2.jpg') center center / cover no-repeat;
+}
+.menu--wild {
+  background: url('../img/bg/bg-menu-item3.jpg') center center / cover no-repeat;
+}
+
+
+
+.menu__item-tittle {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  height: 100%;
+  font-family: 'Alegr-medium';
+  font-size: rem(48px);
+  padding: rem(46px) rem(26px);
+  line-height: 1;
+}
+
+.menu__item-text {
+  max-width: 0;
+  overflow: hidden;
+  background-color: #000;
+  opacity: .93;
+  transition: max-width .4s;
+
+}

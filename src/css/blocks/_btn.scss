@@ -1,0 +1,24 @@
+.btn__link {
+  background: #fff;
+  display: inline-flex;
+  margin-top: rem(23px);
+  padding: rem(20px) rem(35px);
+  border-radius: rem(35px);
+  font-family: 'Alegr-extrabold';
+  font-size: rem(19px);
+  text-transform: uppercase;
+  color: #0f5a47;
+  box-shadow: 0px 2px 7px rgba(80, 80, 80, .5);
+  outline: none;
+}
+
+.color--dark {
+  background: $dark_green;
+  color: #fff;
+}
+
+.form__clear {
+  margin-left: 30px;
+  outline: none;
+  color: $dark_green;
+}

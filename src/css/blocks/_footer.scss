@@ -1,0 +1,34 @@
+.footer {
+  position: absolute;
+  padding: rem(26px) 0;
+  background-color: #fff;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+}
+
+.container--footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.footer__address {
+  text-decoration: none;
+  font-family: 'Alegr';
+  font-size: rem(21px);
+  font-style: normal;
+}
+
+.footer__tel {
+  color: $dark_green;
+  &::before {
+    padding-right: rem(7px);
+    background: url(../img/icon/phone-green.png) center center no-repeat;
+  }
+}
+
+.footer__half {
+  max-width: 50%;
+}

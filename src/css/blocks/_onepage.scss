@@ -1,0 +1,44 @@
+.onepage {
+  position: fixed;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.onepage__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.onepage__item {
+  position: relative;
+  display: flex;
+  margin-top: rem(15px);
+  height: rem(16px);
+  width: 16px;
+  cursor: pointer;
+
+  &.active:before {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: solid 1px #ffffff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
