@@ -102,7 +102,7 @@ task('server', () => { //разворачиваем сервер
 });
 
 task('watch', () => {
-  watch('./src/styles/**/*.scss', series('styles')); //следим за изменениями в sass-файлах
+  watch('./src/css/**/*.scss', series('styles')); //следим за изменениями в sass-файлах
   watch('./src/*.html', series('copy:html')); //следим за изменениями в html
   watch('./src/js/*.js', series('scripts')); //следим за изменениями в JS
 });

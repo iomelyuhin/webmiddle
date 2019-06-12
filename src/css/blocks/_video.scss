@@ -1,3 +1,4 @@
+
 .video__wrapper {
   display: flex;
   flex-direction: column;
@@ -17,6 +18,8 @@
 
 .video__player-img {
   position: absolute;
+  width: rem(160px);
+  fill: #fff;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);

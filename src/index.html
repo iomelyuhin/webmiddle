@@ -30,7 +30,8 @@
                 <li class="header__nav-item" data-scroll-to="3"><a href="#" class="header__nav-link">Команда</a></li>
                 <li class="header__nav-item" data-scroll-to="4"><a href="#" class="header__nav-link">Меню</a></li>
                 <li class="header__nav-item" data-scroll-to="5"><a href="#" class="header__nav-link">Отзывы</a></li>
-                <li class="header__nav-item" data-scroll-to="6"><a href="#" class="header__nav-link">Как мы работаем</a></li>
+                <li class="header__nav-item" data-scroll-to="6"><a href="#" class="header__nav-link">Как мы работаем</a>
+                </li>
                 <li class="header__nav-item" data-scroll-to="7"><a href="#" class="header__nav-link">Контакты</a></li>
               </ul>
             </nav>
@@ -546,26 +547,29 @@
 
       <section class="section how">
         <h2 class="how__tittle tittle">Как мы работаем</h2>
-        <div class="video__wrapper">
-          <div class="video__player">
-            <video id="player" poster="./img/backgrounds/video_bg.jpg">
-              <source src="./src/video.mp4" type="video/mp4">
-            </video>
-            <img src="./img/Play_white.png" alt="" class="play video__player-img">
-          </div>
-          <div class="video__toolbar">
-            <div class="duration">
-              <button class="play duration__img"></button>
-              <input type="range" class="duration__length" id="durationLevel">
+        <div class="how__video">
+          <div class="video__wrapper">
+            <div class="video__player">
+              <video id="player" poster="./img/bg/video-poster.png">
+                <source src="./vid/RitaOra.mp4" type="video/mp4">
+              </video>
+              <img src="./img/icon/play.svg" alt="" class="play video__player-img">
             </div>
-            <div class="sound">
-              <img src="./img/icons/volume.svg" class="sound__mic" id="mic" alt="">
-              <div class="sound__volume">
-                <input type="range" class="duration__length duration__length--other" id="micLevel">
+            <div class="video__toolbar">
+              <div class="duration">
+                <button class="play duration__img"></button>
+                <input type="range" class="duration__length" id="durationLevel">
+              </div>
+              <div class="sound">
+                <img src="./img/icon/volume.svg" class="sound__mic" id="mic" alt="">
+                <div class="sound__volume">
+                  <input type="range" class="duration__length duration__length--other" id="micLevel">
+                </div>
               </div>
             </div>
           </div>
         </div>
+
       </section>
 
       <section class="section deliv">
@@ -723,7 +727,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
-  
+
   <script src="js/main.min.js"></script>
 </body>
 
