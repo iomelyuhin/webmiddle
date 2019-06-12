@@ -39,7 +39,6 @@
     const sectionEqNum = parseInt(sectionEq);
 
     if (!!sectionEqNum === false)
-      console.error("не верное значение для аргуемента sectionEq");
 
     inscroll = true;
 

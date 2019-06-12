@@ -46,9 +46,14 @@ task("copy:svg", () => {
     .pipe(reload({ stream: true }));
 });
 
-task("copy:js", () => {
-  return src("src/js/*.js")
-    .pipe(dest("dist/js/"))
+task("copy:js-libs", () => {
+  return src("src/js/libs/*.js")
+    .pipe(dest("dist/js/libs/"))
+    .pipe(reload({ stream: true }));
+});
+task("copy:video", () => {
+  return src("src/vid/*.mp4")
+    .pipe(dest("dist/vid/"))
     .pipe(reload({ stream: true }));
 });
 
@@ -76,6 +81,7 @@ task('styles', () => { //for SASS
 
 const libs = [ //создаем массив с библиотеками
   "node_modules/jquery/dist/jquery.js",
+  "src/js/libs/*.js",
   "src/js/*.js"
 ];
 
@@ -104,18 +110,19 @@ task('server', () => { //разворачиваем сервер
 task('watch', () => {
   watch('./src/css/**/*.scss', series('styles')); //следим за изменениями в sass-файлах
   watch('./src/*.html', series('copy:html')); //следим за изменениями в html
+  watch('./src/img/**/*.*', series('copy:img')); //следим за изменениями в html
   watch('./src/js/*.js', series('scripts')); //следим за изменениями в JS
 });
 
 task(
   "default",
   series("clean", 
-  parallel("copy:html", "copy:fonts", "copy:img", "styles", "scripts"), 
+  parallel("copy:html", "copy:fonts", "copy:img", "styles", "scripts", "copy:video"), 
   parallel("watch", "server"))
 ); //запуск серии тасков
 
 task(
   "build",
   series("clean", 
-  parallel("copy:html", "copy:fonts", "copy:img", "styles", "scripts")) 
+  parallel("copy:html", "copy:fonts", "copy:img", "styles", "scripts", "copy:video")) 
 ); //запуск серии тасков
