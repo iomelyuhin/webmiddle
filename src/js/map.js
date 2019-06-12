@@ -28,7 +28,7 @@
     }
   ],
 
-  geoObjects = [];
+    geoObjects = [];
 
   function init() { //создаем функцию карт
     const map = new ymaps.Map('map', {
@@ -55,11 +55,18 @@
       );
 
     }
-    
+
     const clusterer = new ymaps.Clusterer({ //кластеризация близлежащих меток 
-      
+      clusterIcons: [
+        {
+          href: "img/icon/flag.png",
+          size: [46, 57],
+          offset: [-23, -57]
+        }
+      ],
+      clusterIconContentLayout: null
     });
-    
+
     map.geoObjects.add(clusterer); //добавляем кластер
     //map.geoObjects.add(placemark); //добавляем флаг на карту
     clusterer.add(geoObjects);
