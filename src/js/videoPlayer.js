@@ -109,12 +109,14 @@
   /*
       Управление звуком
   */
+ var soundLevel;
   function soundOf() {
     /*
         Делаем проверку уровня громкости. 
         Если у нас нашего видео есть звук, то мы его выключаем. 
         Предварительно запомнив текущую позицию громкости в переменную soundLevel
     */
+
     if (video.volume === 0) {
       video.volume = soundLevel;
       soundControl.value = soundLevel * 10;

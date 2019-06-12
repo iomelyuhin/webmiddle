@@ -57,7 +57,7 @@
     setTimeout(() => {
       inscroll = false;
       switchActiveClassInSideMenu(sectionEq);
-    }, 500 + 300);
+    }, 1000 + 300);
   };
 
   var scrollToSection = direction => {
